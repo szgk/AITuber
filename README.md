@@ -1,6 +1,6 @@
-# MochizukiKyoko_Official_Ego
+# ___
 
-AITuberプロジェクト「望月恭子」の公開リポジトリ
+AITuberプロジェクト
 
 ## 概要
 
