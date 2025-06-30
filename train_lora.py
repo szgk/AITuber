@@ -143,7 +143,11 @@ class LoRATrainer:
             )
             
             # ラベルを設定（causal LMの場合、input_idsと同じ）
-            model_inputs["labels"] = model_inputs["input_ids"].copy()
+            # 各サンプルのinput_idsを個別にコピー
+            model_inputs["labels"] = []
+            for input_ids in model_inputs["input_ids"]:
+                model_inputs["labels"].append(input_ids.copy())
+            
             return model_inputs
         
         # Dataset作成
@@ -230,12 +234,54 @@ class LoRATrainer:
         # データセットの準備
         train_dataset, val_dataset = self.prepare_datasets(tokenizer)
         
-        # データコレーターの準備（動的パディング対応）
-        data_collator = DataCollatorForLanguageModeling(
-            tokenizer=tokenizer,
-            mlm=False,
-            pad_to_multiple_of=8  # 効率化のため8の倍数にパディング
-        )
+        # データコレーターの準備（カスタムコレクター）
+        def custom_data_collator(features):
+            """カスタムデータコレクター"""
+            batch = {}
+            first = features[0]
+            
+            # パディングのためのトークンID
+            pad_token_id = tokenizer.pad_token_id
+            if pad_token_id is None:
+                pad_token_id = tokenizer.eos_token_id
+            
+            # 最大長さを取得
+            max_length = max(len(f["input_ids"]) for f in features)
+            
+            # バッチサイズ
+            batch_size = len(features)
+            
+            # input_idsのパディング
+            batch["input_ids"] = []
+            batch["attention_mask"] = []
+            batch["labels"] = []
+            
+            for f in features:
+                input_ids = f["input_ids"]
+                attention_mask = f["attention_mask"]
+                labels = f["labels"]
+                
+                # パディングする長さを計算
+                padding_length = max_length - len(input_ids)
+                
+                # パディングを追加
+                padded_input_ids = input_ids + [pad_token_id] * padding_length
+                padded_attention_mask = attention_mask + [0] * padding_length
+                padded_labels = labels + [-100] * padding_length  # -100は損失計算で無視される
+                
+                batch["input_ids"].append(padded_input_ids)
+                batch["attention_mask"].append(padded_attention_mask)
+                batch["labels"].append(padded_labels)
+            
+            # テンソルに変換
+            import torch
+            batch["input_ids"] = torch.tensor(batch["input_ids"], dtype=torch.long)
+            batch["attention_mask"] = torch.tensor(batch["attention_mask"], dtype=torch.long)
+            batch["labels"] = torch.tensor(batch["labels"], dtype=torch.long)
+            
+            return batch
+        
+        data_collator = custom_data_collator
         
         # 学習引数の設定（型変換を含む）
         training_args_dict = {

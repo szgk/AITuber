@@ -35,7 +35,7 @@ git clone <repository-url>
 cd AITuber
 
 # 仮想環境の作成
-python -m venv venv
+python3 -m venv venv
 
 # 仮想環境の有効化
 # Windows:
@@ -83,18 +83,115 @@ python run.py check-env
 
 ### npmスクリプト（推奨・venv自動使用）
 
+**npmスクリプトは自動的にvenv環境を使用するため、仮想環境の手動有効化は不要です。**
+
+#### 基本コマンド
+
 ```bash
-# 利用可能なコマンドを確認
+# 利用可能なコマンド一覧を表示
 npm run help
 
-# 主要なコマンド
-npm run chat          # チャットインターフェース
-npm run train         # LoRA学習の実行
-npm run test          # モデルテスト
-npm run inference     # 推論モード
+# 環境チェック（GPU、CUDA、パッケージの確認）
+npm run check-env
+
+# データセット準備（必要に応じて）
+npm run prepare-data
 ```
 
-**npmスクリプトは自動的にvenv環境を使用するため、仮想環境の手動有効化は不要です。**
+#### 学習関連コマンド
+
+```bash
+# 通常のLoRA学習（3エポック）
+npm run train
+
+# 高速学習（1エポック、テスト用）
+npm run train:quick
+```
+
+#### チャットとインターフェース
+
+```bash
+# 対話式チャットインターフェース
+npm run chat
+
+# デモモード（プリセット質問）
+npm run chat:demo
+
+# 推論モード（バッチ処理）
+npm run inference
+
+# 推論デモ
+npm run inference:demo
+```
+
+#### モデルテスト
+
+```bash
+# 包括的なモデルテスト
+npm run test
+
+# 高速テスト（基本項目のみ）
+npm run test:quick
+
+# 基本応答テストのみ
+npm run test:basic
+
+# 人格一貫性テストのみ
+npm run test:personality
+```
+
+#### Ollama統合
+
+```bash
+# Ollama自動セットアップ（GGUF変換＋登録）
+npm run ollama:setup
+
+# GGUFフォーマット変換のみ
+npm run ollama:convert
+
+# OllamaAPIテスト
+npm run ollama:test
+
+# Ollamaチャット
+npm run ollama:chat
+```
+
+#### ファイル管理
+
+```bash
+# 生成ファイルの削除（outputs/, __pycache__, etc.）
+npm run clean
+```
+
+#### コマンド詳細説明
+
+| コマンド | 説明 | 実行時間 | 必要条件 |
+|---------|------|---------|----------|
+| `npm run check-env` | GPU/CUDA環境とパッケージの確認 | 1-2分 | - |
+| `npm run train` | LoRA学習（3エポック） | 5-15分 | GPU推奨 |
+| `npm run train:quick` | LoRA学習（1エポック） | 2-5分 | GPU推奨 |
+| `npm run chat` | リアルタイム対話 | - | 学習済みモデル |
+| `npm run test` | 包括的テスト | 3-5分 | 学習済みモデル |
+| `npm run ollama:setup` | Ollama統合セットアップ | 5-10分 | Ollama, 学習済みモデル |
+
+#### 実行例
+
+```bash
+# 1. 初回セットアップ確認
+npm run check-env
+
+# 2. 学習実行
+npm run train:quick
+
+# 3. チャットテスト
+npm run chat
+
+# 4. モデル評価
+npm run test
+
+# 5. Ollama統合（オプション）
+npm run ollama:setup
+```
 
 ### Pythonスクリプト（venv有効化が必要）
 

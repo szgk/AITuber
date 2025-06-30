@@ -150,8 +150,10 @@ class ChatInterface:
         result = self.inference.generate(
             instruction=instruction,
             input_text=user_input,
-            temperature=0.8,
-            max_new_tokens=150
+            temperature=0.7,
+            max_new_tokens=80,
+            top_p=0.9,
+            repetition_penalty=1.2
         )
         
         return result["response"]
@@ -169,18 +171,26 @@ class ChatInterface:
         
         try:
             while True:
-                # ユーザー入力
-                user_input = input(f"{Fore.GREEN}あなた: {Style.RESET_ALL}")
-                
-                # 終了コマンドチェック
-                if user_input.lower() in ['quit', 'exit', 'bye', 'さようなら', 'バイバイ']:
-                    farewell = self.character_info["farewell_patterns"][0]
-                    self._print_response(farewell)
+                try:
+                    # ユーザー入力
+                    user_input = input(f"{Fore.GREEN}あなた: {Style.RESET_ALL}")
+                    
+                    # 終了コマンドチェック
+                    if user_input.lower() in ['quit', 'exit', 'bye', 'さようなら', 'バイバイ']:
+                        farewell = self.character_info["farewell_patterns"][0]
+                        self._print_response(farewell)
+                        break
+                    
+                    # 空入力のスキップ
+                    if not user_input.strip():
+                        continue
+                        
+                except EOFError:
+                    # Ctrl+Dやパイプ終了を適切に処理
+                    print(f"\n{Fore.YELLOW}入力が終了しました{Style.RESET_ALL}")
+                    farewell = "あ、ちょっと急だけど……またお話ししましょうね……"
+                    self._print_response(farewell, typing_effect=False)
                     break
-                
-                # 空入力のスキップ
-                if not user_input.strip():
-                    continue
                 
                 # 応答生成中の表示
                 print(f"{Fore.YELLOW}考え中...{Style.RESET_ALL}", end="\r")

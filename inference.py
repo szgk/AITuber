@@ -159,19 +159,33 @@ class LoRAInference:
             max_length=512
         ).to(self.model.device)
         
-        # 生成設定を更新
-        gen_config = self.generation_config.copy()
+        # 生成設定を更新（新しいインスタンスを作成）
+        gen_config_dict = {
+            'temperature': self.generation_config.temperature,
+            'top_p': self.generation_config.top_p,
+            'top_k': self.generation_config.top_k,
+            'max_new_tokens': self.generation_config.max_new_tokens,
+            'do_sample': self.generation_config.do_sample,
+            'repetition_penalty': self.generation_config.repetition_penalty,
+            'pad_token_id': self.generation_config.pad_token_id,
+            'eos_token_id': self.generation_config.eos_token_id
+        }
+        
+        # パラメータを更新
         if max_new_tokens is not None:
-            gen_config.max_new_tokens = max_new_tokens
+            gen_config_dict['max_new_tokens'] = max_new_tokens
         if temperature is not None:
-            gen_config.temperature = temperature
+            gen_config_dict['temperature'] = temperature
         if top_p is not None:
-            gen_config.top_p = top_p
+            gen_config_dict['top_p'] = top_p
         
         # 追加のパラメータを適用
         for key, value in kwargs.items():
-            if hasattr(gen_config, key):
-                setattr(gen_config, key, value)
+            if key in gen_config_dict:
+                gen_config_dict[key] = value
+        
+        # 新しいGenerationConfigを作成
+        gen_config = GenerationConfig(**gen_config_dict)
         
         # 生成
         with torch.no_grad():
