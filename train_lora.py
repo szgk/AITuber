@@ -222,23 +222,23 @@ class LoRATrainer:
             mlm=False
         )
         
-        # 学習引数の設定
+        # 学習引数の設定（型変換を含む）
         training_args_dict = {
             'output_dir': self.config['training']['output_dir'],
-            'num_train_epochs': self.config['training']['num_train_epochs'],
-            'per_device_train_batch_size': self.config['training']['per_device_train_batch_size'],
-            'per_device_eval_batch_size': self.config['training']['per_device_eval_batch_size'],
-            'gradient_accumulation_steps': self.config['training']['gradient_accumulation_steps'],
-            'learning_rate': self.config['training']['learning_rate'],
-            'warmup_steps': self.config['training']['warmup_steps'],
-            'logging_steps': self.config['training']['logging_steps'],
-            'save_steps': self.config['training']['save_steps'],
-            'eval_steps': self.config['training']['eval_steps'],
-            'save_total_limit': self.config['training']['save_total_limit'],
-            'fp16': self.config['training']['fp16'],
-            'optim': self.config['training']['optim'],
+            'num_train_epochs': int(self.config['training']['num_train_epochs']),
+            'per_device_train_batch_size': int(self.config['training']['per_device_train_batch_size']),
+            'per_device_eval_batch_size': int(self.config['training']['per_device_eval_batch_size']),
+            'gradient_accumulation_steps': int(self.config['training']['gradient_accumulation_steps']),
+            'learning_rate': float(self.config['training']['learning_rate']),
+            'warmup_steps': int(self.config['training']['warmup_steps']),
+            'logging_steps': int(self.config['training']['logging_steps']),
+            'save_steps': int(self.config['training']['save_steps']),
+            'eval_steps': int(self.config['training']['eval_steps']),
+            'save_total_limit': int(self.config['training']['save_total_limit']),
+            'fp16': bool(self.config['training']['fp16']),
+            'optim': str(self.config['training']['optim']),
             'load_best_model_at_end': True,
-            'report_to': self.config['training']['report_to'],
+            'report_to': str(self.config['training']['report_to']),
             'remove_unused_columns': False
         }
         
@@ -264,15 +264,28 @@ class LoRATrainer:
         
         training_args = TrainingArguments(**training_args_dict)
         
-        # Trainerの作成
-        trainer = Trainer(
-            model=model,
-            args=training_args,
-            train_dataset=train_dataset,
-            eval_dataset=val_dataset,
-            tokenizer=tokenizer,
-            data_collator=data_collator
-        )
+        # Trainerの作成（処理クラス名を更新）
+        trainer_kwargs = {
+            'model': model,
+            'args': training_args,
+            'train_dataset': train_dataset,
+            'eval_dataset': val_dataset,
+            'data_collator': data_collator
+        }
+        
+        # transformersバージョンに応じてtokenizerまたはprocessing_classを設定
+        try:
+            import inspect
+            trainer_sig = inspect.signature(Trainer.__init__)
+            if 'processing_class' in trainer_sig.parameters:
+                trainer_kwargs['processing_class'] = tokenizer
+            else:
+                trainer_kwargs['tokenizer'] = tokenizer
+        except:
+            # フォールバック: 古い形式を使用
+            trainer_kwargs['tokenizer'] = tokenizer
+        
+        trainer = Trainer(**trainer_kwargs)
         
         # 学習の実行
         trainer.train()
