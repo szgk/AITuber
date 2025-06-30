@@ -223,25 +223,46 @@ class LoRATrainer:
         )
         
         # 学習引数の設定
-        training_args = TrainingArguments(
-            output_dir=self.config['training']['output_dir'],
-            num_train_epochs=self.config['training']['num_train_epochs'],
-            per_device_train_batch_size=self.config['training']['per_device_train_batch_size'],
-            per_device_eval_batch_size=self.config['training']['per_device_eval_batch_size'],
-            gradient_accumulation_steps=self.config['training']['gradient_accumulation_steps'],
-            learning_rate=self.config['training']['learning_rate'],
-            warmup_steps=self.config['training']['warmup_steps'],
-            logging_steps=self.config['training']['logging_steps'],
-            save_steps=self.config['training']['save_steps'],
-            eval_steps=self.config['training']['eval_steps'],
-            save_total_limit=self.config['training']['save_total_limit'],
-            fp16=self.config['training']['fp16'],
-            optim=self.config['training']['optim'],
-            evaluation_strategy="steps",
-            load_best_model_at_end=True,
-            report_to=self.config['training']['report_to'],
-            remove_unused_columns=False
-        )
+        training_args_dict = {
+            'output_dir': self.config['training']['output_dir'],
+            'num_train_epochs': self.config['training']['num_train_epochs'],
+            'per_device_train_batch_size': self.config['training']['per_device_train_batch_size'],
+            'per_device_eval_batch_size': self.config['training']['per_device_eval_batch_size'],
+            'gradient_accumulation_steps': self.config['training']['gradient_accumulation_steps'],
+            'learning_rate': self.config['training']['learning_rate'],
+            'warmup_steps': self.config['training']['warmup_steps'],
+            'logging_steps': self.config['training']['logging_steps'],
+            'save_steps': self.config['training']['save_steps'],
+            'eval_steps': self.config['training']['eval_steps'],
+            'save_total_limit': self.config['training']['save_total_limit'],
+            'fp16': self.config['training']['fp16'],
+            'optim': self.config['training']['optim'],
+            'load_best_model_at_end': True,
+            'report_to': self.config['training']['report_to'],
+            'remove_unused_columns': False
+        }
+        
+        # transformersのバージョンに応じて互換性のあるパラメータを設定
+        try:
+            import transformers
+            version = transformers.__version__
+            logger.info(f"Transformers version: {version}")
+            
+            # バージョン4.19以降でevaluation_strategyがサポート
+            if hasattr(TrainingArguments, 'evaluation_strategy'):
+                training_args_dict['evaluation_strategy'] = "steps"
+            elif hasattr(TrainingArguments, 'eval_strategy'):
+                training_args_dict['eval_strategy'] = "steps"
+            else:
+                # 古いバージョンでは評価戦略を無効化
+                logger.warning("evaluation_strategy not supported, disabling evaluation")
+                training_args_dict.pop('eval_steps', None)
+                training_args_dict['load_best_model_at_end'] = False
+                
+        except Exception as e:
+            logger.warning(f"バージョンチェックでエラー: {e}")
+        
+        training_args = TrainingArguments(**training_args_dict)
         
         # Trainerの作成
         trainer = Trainer(
