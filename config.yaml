@@ -1,0 +1,94 @@
+# LoRA学習設定ファイル
+
+# モデル設定
+model:
+  # 使用するモデル名
+  # 本番用: Qwen/Qwen2.5-3B-Instruct または Qwen/Qwen2.5-7B-Instruct
+  # テスト用: Qwen/Qwen2.5-0.5B-Instruct
+  name: "Qwen/Qwen2.5-0.5B-Instruct"
+  
+  # 8bit量子化を使用（メモリ削減）
+  load_in_8bit: true
+  
+  # デバイスマッピング
+  device_map: "auto"
+
+# LoRA設定
+lora:
+  # LoRAのランク（大きいほど表現力が上がるがメモリ使用量も増える）
+  r: 16
+  
+  # LoRAのスケーリング係数
+  lora_alpha: 32
+  
+  # LoRAを適用するモジュール
+  target_modules:
+    - "q_proj"
+    - "v_proj"
+    - "k_proj"
+    - "o_proj"
+  
+  # ドロップアウト率
+  lora_dropout: 0.1
+  
+  # バイアスの扱い
+  bias: "none"
+  
+  # タスクタイプ
+  task_type: "CAUSAL_LM"
+
+# 学習設定
+training:
+  # 出力ディレクトリ
+  output_dir: "./outputs/lora_model"
+  
+  # 学習エポック数
+  num_train_epochs: 3
+  
+  # バッチサイズ
+  per_device_train_batch_size: 4
+  per_device_eval_batch_size: 4
+  
+  # 勾配累積ステップ数
+  gradient_accumulation_steps: 1
+  
+  # 学習率
+  learning_rate: 2e-4
+  
+  # ウォームアップステップ数
+  warmup_steps: 100
+  
+  # ログ出力間隔
+  logging_steps: 10
+  
+  # モデル保存間隔
+  save_steps: 100
+  
+  # 評価間隔
+  eval_steps: 100
+  
+  # 保存するチェックポイントの最大数
+  save_total_limit: 3
+  
+  # 16bit浮動小数点演算を使用
+  fp16: true
+  
+  # オプティマイザー
+  optim: "adamw_torch"
+  
+  # 勾配チェックポイント（メモリ削減）
+  gradient_checkpointing: true
+  
+  # レポート先（none, tensorboard, wandbなど）
+  report_to: "none"
+
+# データ設定
+data:
+  # 訓練データファイル
+  train_file: "./data/training/train.jsonl"
+  
+  # 検証データファイル
+  val_file: "./data/training/validation.jsonl"
+  
+  # 最大トークン長
+  max_length: 512
