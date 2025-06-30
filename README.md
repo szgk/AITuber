@@ -40,12 +40,34 @@ python -m venv venv
 # 仮想環境の有効化
 # Windows:
 venv\Scripts\activate
-# Linux/Mac:
+# Linux/Mac/WSL:
 source venv/bin/activate
 
 # パッケージのインストール
 pip install -r requirements.txt
 ```
+
+#### ⚠️ トラブルシューティング: Python環境
+
+**pyenvエラーの対処法**:
+```bash
+# エラー例: /mnt/c/Users/.../pyenv/shims/python: cannot execute: required file not found
+
+# 1. システムPythonを使用（推奨）
+/usr/bin/python3 -m venv venv
+
+# 2. または利用可能なPythonを確認
+which python3
+python3 --version
+
+# 3. pyenv設定をリセット（必要に応じて）
+unset PYENV_ROOT
+export PATH="/usr/bin:$PATH"
+```
+
+**WSL環境での注意点**:
+- Windows側のpyenvではなく、WSL内のPythonを使用してください
+- `python3`コマンドを明示的に使用することを推奨します
 
 ### 2. 環境確認
 
