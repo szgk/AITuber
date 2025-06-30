@@ -14,10 +14,14 @@
     "test:personality": "python test_model.py --test personality",
     "inference": "python inference.py --interactive",
     "inference:demo": "python inference.py",
+    "ollama:setup": "bash setup_ollama.sh",
+    "ollama:convert": "python convert_to_gguf.py",
+    "ollama:test": "python ollama_test.py",
+    "ollama:chat": "python ollama_test.py --chat",
     "prepare-data": "cd data/training && python prepare_dataset.py",
     "check-env": "python test_lora_setup.py",
-    "clean": "rm -rf outputs/ __pycache__/ *.pyc .pytest_cache/",
-    "help": "echo 'Available commands: setup, train, chat, test, inference, prepare-data, check-env, clean'"
+    "clean": "rm -rf outputs/ __pycache__/ *.pyc .pytest_cache/ ollama_models/",
+    "help": "echo 'Available commands: setup, train, chat, test, inference, ollama:setup, ollama:test, prepare-data, check-env, clean'"
   },
   "keywords": [
     "AITuber",
