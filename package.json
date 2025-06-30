@@ -1,0 +1,33 @@
+{
+  "name": "aituber-mochizuki-kyoko",
+  "version": "1.0.0",
+  "description": "AITuber 望月京子 - LoRA学習済みモデル",
+  "scripts": {
+    "setup": "python -m venv venv && echo 'Virtual environment created. Please activate it and run: pip install -r requirements.txt'",
+    "train": "python train_lora.py --config config.yaml",
+    "train:quick": "python train_lora.py --config config.yaml --epochs 1",
+    "chat": "python chat_interface.py",
+    "chat:demo": "python chat_interface.py --demo",
+    "test": "python test_model.py",
+    "test:quick": "python test_model.py --quick",
+    "test:basic": "python test_model.py --test basic",
+    "test:personality": "python test_model.py --test personality",
+    "inference": "python inference.py --interactive",
+    "inference:demo": "python inference.py",
+    "prepare-data": "cd data/training && python prepare_dataset.py",
+    "check-env": "python test_lora_setup.py",
+    "clean": "rm -rf outputs/ __pycache__/ *.pyc .pytest_cache/",
+    "help": "echo 'Available commands: setup, train, chat, test, inference, prepare-data, check-env, clean'"
+  },
+  "keywords": [
+    "AITuber",
+    "LoRA",
+    "Qwen",
+    "望月京子",
+    "machine-learning"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {},
+  "dependencies": {}
+}
