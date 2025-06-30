@@ -67,7 +67,7 @@ python run.py check-env
 
 ## 使用方法
 
-### npmスクリプト（推奨）
+### npmスクリプト（推奨・venv自動使用）
 
 ```bash
 # 利用可能なコマンドを確認
@@ -80,9 +80,20 @@ npm run test          # モデルテスト
 npm run inference     # 推論モード
 ```
 
-### Pythonスクリプト
+**npmスクリプトは自動的にvenv環境を使用するため、仮想環境の手動有効化は不要です。**
+
+### Pythonスクリプト（venv有効化が必要）
+
+**⚠️ 重要: Pythonスクリプトを直接実行する前に、必ず仮想環境を有効化してください**
 
 ```bash
+# 1. 仮想環境の有効化（必須）
+# Windows:
+venv\Scripts\activate
+# Linux/Mac:
+source venv/bin/activate
+
+# 2. スクリプトの実行
 # 統合実行スクリプト
 python run.py help           # ヘルプ表示
 python run.py chat           # チャット開始
@@ -96,6 +107,11 @@ python test_model.py         # テスト
 python inference.py          # 推論
 ```
 
+### 推奨実行方法
+
+1. **初心者・簡単実行**: `npm run` コマンドを使用
+2. **開発・カスタマイズ**: venv有効化後にPythonスクリプトを直接実行
+
 ## 主要機能
 
 ### 1. チャットインターフェース
@@ -103,12 +119,12 @@ python inference.py          # 推論
 ```bash
 # 対話モード
 npm run chat
-# または
+# または（venv有効化後）
 python run.py chat
 
 # デモモード
 npm run chat:demo
-# または
+# または（venv有効化後）
 python run.py chat-demo
 ```
 
@@ -119,12 +135,12 @@ python run.py chat-demo
 ```bash
 # 通常学習（3エポック）
 npm run train
-# または
+# または（venv有効化後）
 python run.py train
 
 # 高速学習（1エポック、テスト用）
 npm run train:quick
-# または
+# または（venv有効化後）
 python run.py train-quick
 ```
 
@@ -135,12 +151,12 @@ python run.py train-quick
 ```bash
 # 包括的テスト
 npm run test
-# または
+# または（venv有効化後）
 python run.py test
 
 # 高速テスト
 npm run test:quick
-# または
+# または（venv有効化後）
 python run.py test-quick
 
 # 特定テストのみ
@@ -155,12 +171,12 @@ AITuberの応答品質、人格一貫性、パフォーマンスを評価。
 ```bash
 # 対話式推論
 npm run inference
-# または
+# または（venv有効化後）
 python run.py inference
 
 # デモ実行
 npm run inference:demo
-# または
+# または（venv有効化後）
 python run.py inference-demo
 ```
 
