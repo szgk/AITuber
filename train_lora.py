@@ -131,22 +131,36 @@ class LoRATrainer:
         train_texts = [self.format_instruction(example) for example in train_data]
         val_texts = [self.format_instruction(example) for example in val_data]
         
-        # トークナイズ
+        # トークナイズ関数（修正版）
         def tokenize_function(examples):
-            return tokenizer(
+            # テキストをトークナイズ
+            model_inputs = tokenizer(
                 examples['text'],
                 truncation=True,
-                padding='max_length',
-                max_length=self.config['data']['max_length']
+                padding=False,  # バッチごとに動的パディング
+                max_length=self.config['data']['max_length'],
+                return_tensors=None  # リストで返す
             )
+            
+            # ラベルを設定（causal LMの場合、input_idsと同じ）
+            model_inputs["labels"] = model_inputs["input_ids"].copy()
+            return model_inputs
         
         # Dataset作成
         train_dataset = Dataset.from_dict({'text': train_texts})
         val_dataset = Dataset.from_dict({'text': val_texts})
         
         # トークナイズ
-        train_dataset = train_dataset.map(tokenize_function, batched=True)
-        val_dataset = val_dataset.map(tokenize_function, batched=True)
+        train_dataset = train_dataset.map(
+            tokenize_function, 
+            batched=True,
+            remove_columns=['text']  # 元のテキストカラムを削除
+        )
+        val_dataset = val_dataset.map(
+            tokenize_function, 
+            batched=True,
+            remove_columns=['text']  # 元のテキストカラムを削除
+        )
         
         logger.info(f"訓練データ: {len(train_dataset)}件")
         logger.info(f"検証データ: {len(val_dataset)}件")
@@ -216,10 +230,11 @@ class LoRATrainer:
         # データセットの準備
         train_dataset, val_dataset = self.prepare_datasets(tokenizer)
         
-        # データコレーターの準備
+        # データコレーターの準備（動的パディング対応）
         data_collator = DataCollatorForLanguageModeling(
             tokenizer=tokenizer,
-            mlm=False
+            mlm=False,
+            pad_to_multiple_of=8  # 効率化のため8の倍数にパディング
         )
         
         # 学習引数の設定（型変換を含む）
