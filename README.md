@@ -4,6 +4,8 @@ LoRA（Low-Rank Adaptation）を使用したAITuberシステム
 
 ## 概要
 
+ショート動画の制作は[全身アニメーション制作](tools/shorts/README.md)を参照してください。専用ポーズ・背景・VOICEVOX音声・自動字幕を合成し、縦型MP4を書き出せます。初回作品は[隠れてご挨拶](projects/short-001/storyboard.json)です。
+
 このプロジェクトは、Qwen3ベースモデルにLoRAファインチューニングを適用して、AITuberキャラクターを作成するシステムです。
 
 ## プロジェクト構成

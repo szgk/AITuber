@@ -1,0 +1,174 @@
+{
+  "対象": "告知用静止画15枚",
+  "overall": "合格",
+  "scope": "静止画の視覚レビュー。動画制作・公開情報確定は対象外。",
+  "targets": [
+    {
+      "path": "images/d-14.png",
+      "sha256": "ed6180eb7c4379ac3f3987eab173825bf21b85741017ccebab98734ddd9b2de8"
+    },
+    {
+      "path": "images/d-13.png",
+      "sha256": "c6d54292a2b38c23d85bcd9417d493e432ee06628178756fea39c91cb6fb9da3"
+    },
+    {
+      "path": "images/d-12.png",
+      "sha256": "e7bbc4eff47d046cc40aa5ba6cbceefee0a51dc1d3fe9893cbfd2154b7968223"
+    },
+    {
+      "path": "images/d-11.png",
+      "sha256": "1a876338269aa08ff64eeed3fc63068207aeaf5463ad83cc66334e4fae877a9c"
+    },
+    {
+      "path": "images/d-10.png",
+      "sha256": "424fb16a70031315dfba2320c8553febd672e7268d0c934ebfb9497c8bdde4d6"
+    },
+    {
+      "path": "images/d-09.png",
+      "sha256": "7c5efae3d068de2b9e8f27edd4f61fd58a205c97a4dbb4d0d964c4236efd9796"
+    },
+    {
+      "path": "images/d-08.png",
+      "sha256": "fd645fc054952192cf32c6b3da8cf0208c27c58828956734218c72651e3424df"
+    },
+    {
+      "path": "images/d-07.png",
+      "sha256": "ab782b9f8ede21aabb8cedac2be5e93ee777eeb203500935b1a35beae7ac7c95"
+    },
+    {
+      "path": "images/d-06.png",
+      "sha256": "5a77f32b30bab9a2d3da951a6f450be7c22f02461ba996d5986e8a3f53aacb47"
+    },
+    {
+      "path": "images/d-05.png",
+      "sha256": "a4c2421bfddac337688f98ab8486b100ff250279a4456773bddd7654f388c23e"
+    },
+    {
+      "path": "images/d-04.png",
+      "sha256": "882c1cd355959c7abad636a681de1fcfbb026a18cf88864f096c5df56e5ee8ad"
+    },
+    {
+      "path": "images/d-03.png",
+      "sha256": "ffc9d9951ea32b58e9f6ea33155296486dcdc17fa881a3ce09f7cb9329cbdcb4"
+    },
+    {
+      "path": "images/d-02.png",
+      "sha256": "7aad09972c138d7aee8bcfe7e8d3fd6a22b35f9e8c9dd8c1f21d46b65ce262c0"
+    },
+    {
+      "path": "images/d-01.png",
+      "sha256": "bb376aac2397e8183bac22a22758c67a5b74a2b5033da235a53e766fa3fe4202"
+    },
+    {
+      "path": "images/d-00.png",
+      "sha256": "47cefab210173d42a80ddd44db244c5f5ec0588168c4e6192bcc314e708f39b4"
+    }
+  ],
+  "inspectedEvidence": [
+    {
+      "path": "review/contact-sheet.png",
+      "sha256": "6e3d74051252beeccfdecace2102f57cba7d94b4a0cbe329d2af679a043e38ac"
+    },
+    {
+      "path": "images/d-10.png",
+      "sha256": "424fb16a70031315dfba2320c8553febd672e7268d0c934ebfb9497c8bdde4d6"
+    },
+    {
+      "path": "images/d-07.png",
+      "sha256": "ab782b9f8ede21aabb8cedac2be5e93ee777eeb203500935b1a35beae7ac7c95"
+    },
+    {
+      "path": "images/d-01.png",
+      "sha256": "bb376aac2397e8183bac22a22758c67a5b74a2b5033da235a53e766fa3fe4202"
+    },
+    {
+      "path": "review/d-01-feet.png",
+      "sha256": "7e31abce2cc6e7c090be2f04ceb1092aa7e84d0d117dfc933df2bce3a7ffdcbb"
+    },
+    {
+      "path": "review/d-00-feet.png",
+      "sha256": "7e31abce2cc6e7c090be2f04ceb1092aa7e84d0d117dfc933df2bce3a7ffdcbb"
+    }
+  ],
+  "checks": [
+    {
+      "item": "接地・床",
+      "status": "合格",
+      "findings": "床・家具を持たない白い図版。全身2枚の足先は枠内に収まり、靴の欠損や床との矛盾なし。",
+      "evidence": [
+        "review/contact-sheet.png",
+        "images/d-10.png",
+        "images/d-07.png",
+        "images/d-01.png",
+        "review/d-01-feet.png",
+        "review/d-00-feet.png"
+      ]
+    },
+    {
+      "item": "遮蔽・前後関係",
+      "status": "合格",
+      "findings": "紺の図形は告知用の目隠し。頭頂部と片目の公開範囲を確認。家具境界は存在せず対象外。",
+      "evidence": [
+        "review/contact-sheet.png",
+        "images/d-10.png",
+        "images/d-07.png",
+        "images/d-01.png",
+        "review/d-01-feet.png",
+        "review/d-00-feet.png"
+      ]
+    },
+    {
+      "item": "身体・姿勢",
+      "status": "合格",
+      "findings": "既存原画の姿勢を維持。手は原画どおり前で揃え、切り離した腕や追加指はない。",
+      "evidence": [
+        "review/contact-sheet.png",
+        "images/d-10.png",
+        "images/d-07.png",
+        "images/d-01.png",
+        "review/d-01-feet.png",
+        "review/d-00-feet.png"
+      ]
+    },
+    {
+      "item": "時間・カメラ",
+      "status": "対象外",
+      "findings": "静止画15枚。動画の連続性は未確認。",
+      "evidence": [
+        "review/contact-sheet.png",
+        "images/d-10.png",
+        "images/d-07.png",
+        "images/d-01.png",
+        "review/d-01-feet.png",
+        "review/d-00-feet.png"
+      ]
+    },
+    {
+      "item": "作画・光",
+      "status": "合格",
+      "findings": "同じ原画からの図版。淡い背景と紺の文字で統一。原画の拡大による線の柔らかさあり。",
+      "evidence": [
+        "review/contact-sheet.png",
+        "images/d-10.png",
+        "images/d-07.png",
+        "images/d-01.png",
+        "review/d-01-feet.png",
+        "review/d-00-feet.png"
+      ]
+    },
+    {
+      "item": "指摘・画面",
+      "status": "合格",
+      "findings": "お辞儀なし。頭頂部から全身まで段階公開。混入した設定表見出しは修正後の一覧で除去を確認。",
+      "evidence": [
+        "review/contact-sheet.png",
+        "images/d-10.png",
+        "images/d-07.png",
+        "images/d-01.png",
+        "review/d-01-feet.png",
+        "review/d-00-feet.png"
+      ]
+    }
+  ],
+  "unresolved": []
+}

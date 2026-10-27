@@ -1,0 +1,32 @@
+[
+  {
+    "file": "01-soft.wav",
+    "title": "A · 控えめ",
+    "seconds": 12.67,
+    "peak": 0.4406,
+    "note": "震えを抑え、少しゆっくり。聞きやすさを優先した比較用。",
+    "speed": 0.97,
+    "pitchDepth": 0.0008,
+    "amplitudeDepth": 0.025
+  },
+  {
+    "file": "02-nervous.wav",
+    "title": "B · 少し緊張",
+    "seconds": 12.94,
+    "peak": 0.4204,
+    "note": "小さな高さと音量の揺れ。気弱さと聞きやすさの中間。",
+    "speed": 0.95,
+    "pitchDepth": 0.0025,
+    "amplitudeDepth": 0.065
+  },
+  {
+    "file": "03-trembling.wav",
+    "title": "C · 震えを強めた比較用",
+    "seconds": 13.07,
+    "peak": 0.4092,
+    "note": "震えを分かりやすくした比較用。長く聞くと揺れが目立つ可能性あり。",
+    "speed": 0.94,
+    "pitchDepth": 0.005,
+    "amplitudeDepth": 0.13
+  }
+]

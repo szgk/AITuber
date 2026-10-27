@@ -1,0 +1,20 @@
+{
+  "video": "video.mp4",
+  "sha256": "6873f2f29746c347f3c491d0c10c231615b45a126b216b5492df17e04cde42e7",
+  "asset": "assets/debut-animation/13.png",
+  "assetSha256": "c29325b2928ea6631e55796eae250e2154cb78ae446b73791c6212bea3f5ee9f",
+  "rendererSha256": "82ee8c4e25218112d45a0564a04ba5e8aafd5829bde99631799a0a2b63cd02b3",
+  "duration": 6.0,
+  "fps": 30,
+  "size": [
+    1080,
+    1080
+  ],
+  "status": "無音確認版として視覚・技術レビュー済み",
+  "motion": [
+    "頭と顔の揺れ",
+    "右上の跳ね毛の局所変形",
+    "ハイライトの揺れ"
+  ],
+  "audio": "無音。口の開閉は演技確認用。"
+}

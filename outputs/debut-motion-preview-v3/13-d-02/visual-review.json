@@ -1,0 +1,73 @@
+{
+  "overall": "合格",
+  "scope": "無音・テスト用口開閉の動作確認版としての視覚判定。声付き本編・音声同期の判定ではない。",
+  "target": "video.mp4",
+  "sha256": "3a59474dcc0640fc25b1000f49300e44492c5d07f4209dd507bf706579c844c7",
+  "inspectedEvidence": [
+    {
+      "path": "review\\full-sequence.png",
+      "sha256": "defc8810dfeec45c441ec32a1ce644f465638ed0420294601e2bc7a34c969cc0"
+    },
+    {
+      "path": "review\\detail-04.png",
+      "sha256": "65ef89c6c46cfcfca10f2a43f17417b857be9742d2a192a49ca4a8ec2682885a"
+    }
+  ],
+  "checks": [
+    {
+      "item": "接地・床",
+      "status": "対象外",
+      "findings": "全編に足・床が描かれていない。",
+      "evidence": [
+        "review\\full-sequence.png",
+        "review\\detail-04.png"
+      ]
+    },
+    {
+      "item": "遮蔽・前後関係",
+      "status": "合格",
+      "findings": "実動画の前景・髪・手・顔の境界を確認。家具は存在せず対象外。",
+      "evidence": [
+        "review\\full-sequence.png",
+        "review\\detail-04.png"
+      ]
+    },
+    {
+      "item": "身体・姿勢",
+      "status": "合格",
+      "findings": "持つ・添える・握る手の形を固定し、局所的な伸縮を除去。",
+      "evidence": [
+        "review\\full-sequence.png",
+        "review\\detail-04.png"
+      ]
+    },
+    {
+      "item": "時間・カメラ",
+      "status": "合格",
+      "findings": "全6秒の0.1秒刻み60連続フレームで、開始・中間・終了と動作の往復を確認。飛びや二重像なし。",
+      "evidence": [
+        "review\\full-sequence.png",
+        "review\\detail-04.png"
+      ]
+    },
+    {
+      "item": "作画・光",
+      "status": "合格",
+      "findings": "太い線とセル塗りを維持。口の方向が顔に沿い、旧口や大きな色の矩形が残らない。",
+      "evidence": [
+        "review\\full-sequence.png",
+        "review\\detail-04.png"
+      ]
+    },
+    {
+      "item": "指摘・画面",
+      "status": "合格",
+      "findings": "頬に添えた指と手の形を固定。目のハイライトの揺れを維持。 顔中心の既定構図を維持。",
+      "evidence": [
+        "review\\full-sequence.png",
+        "review\\detail-04.png"
+      ]
+    }
+  ],
+  "unresolved": []
+}

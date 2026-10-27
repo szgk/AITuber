@@ -1,0 +1,72 @@
+{
+  "status": "合格",
+  "output": "outputs\\shorts\\short-001-v6\\kyoko-short-001.mp4",
+  "duration": 23.03,
+  "dimensions": [
+    1080,
+    1920
+  ],
+  "fps": 30,
+  "codecs": [
+    "H.264",
+    "AAC"
+  ],
+  "integratedLufs": -16.54,
+  "truePeakDbtp": -1.46,
+  "checks": [
+    "映像と音声を全尺デコード",
+    "解像度とコーデック",
+    "音声実尺と動画尺の一致",
+    "字幕タイムラインの連続性",
+    "音声ラウドネスとピーク",
+    "素材・台本・動画のハッシュ一致（現行レンダラーとの差異は別記）"
+  ],
+  "visualReview": {
+    "errors": [],
+    "report": "visual-review.json"
+  },
+  "speechChecks": [
+    {
+      "text": "あ、あの……こんにちは。",
+      "speechText": "あ、あの……こんにちは。",
+      "kana": "アアノコンニチワ",
+      "audibleFrames": 39,
+      "mouthOpenFrames": 39,
+      "coverage": 1.0
+    },
+    {
+      "text": "……あっ。机の後ろでした。",
+      "speechText": "……あっ。机の後ろでした。",
+      "kana": "アッツクエノウシロデシタ",
+      "audibleFrames": 52,
+      "mouthOpenFrames": 46,
+      "coverage": 0.885
+    },
+    {
+      "text": "はじめまして。望月京子です。",
+      "speechText": "はじめまして。望月京子です。",
+      "kana": "ハジメマシテモチズキキョオコデス",
+      "audibleFrames": 55,
+      "mouthOpenFrames": 55,
+      "coverage": 1.0
+    },
+    {
+      "text": "緊張すると、つい、顔を隠したくて……。",
+      "speechText": "緊張すると、つい、顔を隠したくて……。",
+      "kana": "キンチョオスルトツイカオオカクシタクテ",
+      "audibleFrames": 72,
+      "mouthOpenFrames": 72,
+      "coverage": 1.0
+    },
+    {
+      "text": "少しずつ、お話しできたら、うれしいです。",
+      "speechText": "少しずつ、おはなしできたら、うれしいです。",
+      "kana": "スコシズツオハナシデキタラウレシイデス",
+      "audibleFrames": 77,
+      "mouthOpenFrames": 76,
+      "coverage": 0.987
+    }
+  ],
+  "technicalStatus": "合格",
+  "rendererMatchesCurrentSource": true
+}

@@ -1,0 +1,31 @@
+{
+  "status": "採用",
+  "selectedAt": "2026-10-23",
+  "engine": "VOICEVOX",
+  "referenceEngineVersion": "0.25.2",
+  "character": "ナースロボ＿タイプＴ",
+  "speakerUuid": "882a636f-3bac-431a-966d-c5e6bba9f949",
+  "style": "ノーマル",
+  "styleId": 47,
+  "query": {
+    "speedScale": 0.88,
+    "intonationScale": 0.8,
+    "volumeScale": 0.95,
+    "prePhonemeLength": 0.22,
+    "postPhonemeLength": 0.32,
+    "outputSamplingRate": 24000,
+    "outputStereo": false
+  },
+  "processing": {
+    "pitchDepth": 0.002,
+    "pitchFrequencyHz": 4.6,
+    "pitchPhaseModulationDepth": 0.3,
+    "pitchPhaseModulationFrequencyHz": 0.7,
+    "amplitudeDepth": 0.055,
+    "amplitudeFrequencyHz": 4.1
+  },
+  "credit": "VOICEVOX:ナースロボ＿タイプＴ",
+  "referenceSample": "outputs/voicevox-samples/06-nurse-subtle-tremble.wav",
+  "generator": "tools/voice-samples/generate-voicevox.py",
+  "adr": "docs/adr/0007-adopt-kyoko-voice.md"
+}

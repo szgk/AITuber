@@ -1,0 +1,163 @@
+{
+  "project": "projects/short-001/storyboard.json",
+  "title": "隠れてご挨拶",
+  "audioInputHash": "7e79214b8bb51d808a9fe552634f18f208f4cf3b235d57cb1b3b37acc465ff60",
+  "soundtrackHash": "d391eda69cbc7339883dd7a653c97ab1ba3fec639e089938db488071168c35a2",
+  "duration": 23.212666666666667,
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "timeline": [
+    {
+      "pose": "crouch",
+      "text": "あ、あの……こんにちは。",
+      "caption": "あ、あの……\nこんにちは。",
+      "x": 0.115,
+      "footY": 0.557,
+      "bodyHeight": 0.255,
+      "camera": 2.25,
+      "focus": [
+        0.205,
+        0.465
+      ],
+      "behindDesk": true,
+      "pauseAfter": 0.65,
+      "transition": "cut",
+      "showNameLabel": false,
+      "peekDrop": 0,
+      "start": 0.55,
+      "speechEnd": 3.6113333333333335,
+      "end": 4.261333333333334,
+      "audio": "outputs\\shorts\\short-001-v3\\audio\\442df2b645d445981425dccb8bcab96b3022a51945a28f450d80eea925d706cc.wav"
+    },
+    {
+      "pose": "crouch",
+      "text": "……あっ。机の後ろでした。",
+      "caption": "……あっ。\n机の後ろでした。",
+      "x": 0.115,
+      "footY": 0.557,
+      "bodyHeight": 0.255,
+      "camera": 2.25,
+      "focus": [
+        0.205,
+        0.465
+      ],
+      "behindDesk": true,
+      "pauseAfter": 0.75,
+      "transition": "cut",
+      "showNameLabel": false,
+      "peekDrop": 0,
+      "start": 4.261333333333333,
+      "speechEnd": 7.109333333333333,
+      "end": 7.859333333333333,
+      "audio": "outputs\\shorts\\short-001-v3\\audio\\38c546a8145c81639cb89ec463a1126809954b6fb4672b0f8e3569d965c4d817.wav"
+    },
+    {
+      "pose": "standing",
+      "text": "はじめまして。望月京子です。",
+      "caption": "はじめまして。\n望月京子です。",
+      "x": 0.65,
+      "footY": 0.8,
+      "bodyHeight": 0.57,
+      "camera": 3.1,
+      "focus": [
+        0.65,
+        0.355
+      ],
+      "pauseAfter": 0.5,
+      "transition": "cut",
+      "showNameLabel": false,
+      "start": 7.859333333333334,
+      "speechEnd": 11.294,
+      "end": 11.794,
+      "audio": "outputs\\shorts\\short-001-v3\\audio\\5594299860ecf5a5baab629da1890779cbd93e933842dcfa9b2045d2d090dcdf.wav"
+    },
+    {
+      "pose": "standing",
+      "poseSequence": [
+        {
+          "at": 0,
+          "pose": "standing"
+        },
+        {
+          "at": 0.08,
+          "pose": "hairRaise"
+        },
+        {
+          "at": 0.26,
+          "pose": "hairHide"
+        },
+        {
+          "at": 0.64,
+          "pose": "hairTuck"
+        },
+        {
+          "at": 0.86,
+          "pose": "standing"
+        }
+      ],
+      "poseTransition": 0,
+      "text": "緊張すると、つい、顔を隠したくて……。",
+      "caption": "緊張すると、つい、\n顔を隠したくて……。",
+      "x": 0.65,
+      "footY": 0.8,
+      "bodyHeight": 0.57,
+      "camera": 3.1,
+      "focus": [
+        0.65,
+        0.355
+      ],
+      "pauseAfter": 0.5,
+      "transition": "cut",
+      "showNameLabel": false,
+      "start": 11.794,
+      "speechEnd": 16.540666666666667,
+      "end": 17.040666666666667,
+      "audio": "outputs\\shorts\\short-001-v3\\audio\\600ef0b308f06e1da2e09156ff53d150fc517380c7be3f95d8244b131d2db06e.wav"
+    },
+    {
+      "pose": "standing",
+      "text": "少しずつ、お話しできたら、うれしいです。",
+      "caption": "少しずつ、お話しできたら\nうれしいです。",
+      "x": 0.65,
+      "footY": 0.8,
+      "bodyHeight": 0.57,
+      "camera": 3.1,
+      "focus": [
+        0.65,
+        0.355
+      ],
+      "pauseAfter": 1.5,
+      "transition": "cut",
+      "showNameLabel": false,
+      "start": 17.040666666666667,
+      "speechEnd": 21.712666666666667,
+      "end": 23.212666666666667,
+      "audio": "outputs\\shorts\\short-001-v3\\audio\\fef25c900ac64bc1644196784224b724cea6dc02563d15e35874d044ae8b3f55.wav"
+    }
+  ],
+  "engine": {
+    "version": "0.25.2",
+    "speaker": "ナースロボ＿タイプＴ",
+    "style": {
+      "name": "ノーマル",
+      "id": 47,
+      "type": "talk"
+    }
+  },
+  "credit": "VOICEVOX:ナースロボ＿タイプＴ",
+  "assets": {
+    "assets/shorts/001/v2/room.png": "8e64c380bbde7b6ee28af848510adee99bdeef43c720970aef9c6f9b30c2e50b",
+    "assets/shorts/001/standing.png": "57fd103747d025be51a720725a2f72cdd962b952415ee79954a9b596c67c48b4",
+    "assets/shorts/001/speaking.png": "78da44876901e88c395ccc10094f56f90403dc3e183f91b4e95e53c2bb2c35f1",
+    "assets/shorts/001/crouch.png": "51505f3549e55487893bea7cdada15a2c7506c6d3f87ece9c11a795e0a7e8760",
+    "assets/shorts/001/v2/hair-raise.png": "a9dd71c958dccbb3d844651526010bcfca67b397d78aa11a4ded4f5a520edb60",
+    "assets/shorts/001/v2/hair-hide.png": "f4838f590cb12b739ba77763b0216b207945973a131ca2bf9baa8bea37ca8e56",
+    "assets/shorts/001/v2/hair-tuck.png": "e413c0d997bf170e47c5e1c0949b9c31b231d1c40e91e853d43170d7a81a4598"
+  },
+  "rendererHash": "22860cfc8ed69eaeb0030cc40fbd13419f4e912bf64be898fd431ac64ce717ed",
+  "storyboardHash": "e03515d0227b7d4d9fcb0751244f4334d2b542cbe913d58e56c96fec4c0da323",
+  "output": "outputs\\shorts\\short-001-v3\\kyoko-short-001.mp4",
+  "status": "書き出し完了",
+  "outputHash": "b361df858bf821f0f877c526cf460d6d12648ccaeb3e40c3eb74f4f1072534a1"
+}

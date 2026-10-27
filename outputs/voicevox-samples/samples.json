@@ -1,0 +1,76 @@
+{
+  "engine": "VOICEVOX",
+  "version": "0.25.2",
+  "checked": "2026-10-23",
+  "text": "あ、あの……こんにちは。望月京子です。えっと、今日は……少しだけ、お話ししても、いいですか？",
+  "status": "比較用・未採用",
+  "samples": [
+    {
+      "file": "01-himari.wav",
+      "character": "冥鳴ひまり",
+      "style": "ノーマル",
+      "styleId": 14,
+      "title": "落ち着いた声・ゆっくり",
+      "seconds": 10.92,
+      "credit": "VOICEVOX:冥鳴ひまり",
+      "rules": "https://www.meimeihimari.com/terms-of-use",
+      "processed": false
+    },
+    {
+      "file": "02-hau.wav",
+      "character": "雨晴はう",
+      "style": "ノーマル",
+      "styleId": 10,
+      "title": "やわらかい声・ゆっくり",
+      "seconds": 11.03,
+      "credit": "VOICEVOX:雨晴はう",
+      "rules": "https://amehau.com/rules/amehare-hau-rule",
+      "processed": false
+    },
+    {
+      "file": "03-nurse-normal.wav",
+      "character": "ナースロボ＿タイプＴ",
+      "style": "ノーマル",
+      "styleId": 47,
+      "title": "控えめな声",
+      "seconds": 11.1,
+      "credit": "VOICEVOX:ナースロボ＿タイプＴ",
+      "rules": "https://www.krnr.top/rules",
+      "processed": false
+    },
+    {
+      "file": "04-nurse-fear.wav",
+      "character": "ナースロボ＿タイプＴ",
+      "style": "恐怖",
+      "styleId": 49,
+      "title": "不安・震えの比較",
+      "seconds": 13.33,
+      "credit": "VOICEVOX:ナースロボ＿タイプＴ",
+      "rules": "https://www.krnr.top/rules",
+      "processed": false
+    },
+    {
+      "file": "05-nurse-whisper.wav",
+      "character": "ナースロボ＿タイプＴ",
+      "style": "内緒話",
+      "styleId": 50,
+      "title": "小さな声の比較",
+      "seconds": 11.18,
+      "credit": "VOICEVOX:ナースロボ＿タイプＴ",
+      "rules": "https://www.krnr.top/rules",
+      "processed": false
+    },
+    {
+      "file": "06-nurse-subtle-tremble.wav",
+      "character": "ナースロボ＿タイプＴ",
+      "style": "ノーマル",
+      "styleId": 47,
+      "title": "小さな震えを追加",
+      "seconds": 11.1,
+      "credit": "VOICEVOX:ナースロボ＿タイプＴ",
+      "rules": "https://www.krnr.top/rules",
+      "processed": true,
+      "processing": "音高の揺れ約0.2%、音量の揺れ最大5.5%。声質変換モデル・機械学習は使用しない。"
+    }
+  ]
+}

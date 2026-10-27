@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="ja">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>京子の収録室 | KYOKO STUDIO</title>
+<link rel="stylesheet" href="studio.css">
+<body>
+<header><a href="./">☾ <b>KYOKO</b> STUDIO <small>望月京子の収録室</small></a><span id="badge">素材を準備中</span></header>
+<main>
+<section class="workspace"><div class="stage-heading"><div><span class="eyebrow">DESIGN VER.1</span><h1>今日も、あなたのペースで。</h1></div><span id="dimensions">1080 × 1920 / 30fps</span></div>
+<div class="preview"><canvas id="stage" width="1080" height="1920" aria-label="アバターと収録映像のプレビュー"></canvas></div>
+<div class="transport"><span id="timer">00:00:00</span><button id="record" class="primary" disabled>● 収録開始</button><button id="pause" disabled>一時停止</button><button id="stop" disabled>■ 停止・保存</button></div>
+<p id="status" role="status">原画を読み込んでいます。</p><div id="downloads"></div></section>
+<aside>
+<section><span class="eyebrow">01 / FRAME</span><h2>映像をつくる</h2><label>動画サイズ<select id="format"><option value="portrait">ショート · 縦 9:16</option><option value="square">告知 · 正方形 1:1</option><option value="landscape">ロング · 横 16:9</option></select></label><label>カメラ<select id="shot"><option value="full">全身</option><option value="bust">バストアップ</option></select></label><label>背景<select id="background"><option value="soft">やわらかな月あかり</option><option value="night">紺色の夜</option><option value="paper">あたたかな紙色</option><option value="room">月あかりのスタジオ</option><option value="green">グリーンバック</option><option value="white">白</option><option value="dark">濃紺</option></select></label><label>アバターの大きさ<input id="scale" type="range" min="0.65" max="1.45" value="1" step="0.01"></label></section>
+<section><span class="eyebrow">02 / PERFORMANCE</span><h2>表情と動き</h2><div class="expressions"><button data-expression="normal" class="selected">1 通常</button><button data-expression="smile">2 微笑み</button><button data-expression="surprise">3 びっくり</button></div><label><input id="motion" type="checkbox" checked> 呼吸・首振り・瞬き</label><label><input id="demo" type="checkbox"> おしゃべりデモ（音声なし）</label><label>口パク感度<input id="sensitivity" type="range" min="1" max="12" value="5" step="0.1"></label></section>
+<section><span class="eyebrow">03 / AUDIO</span><h2>音声ファイルで収録</h2><label>合成音声・ナレーションを読み込む<input id="audioFile" type="file" accept="audio/*"></label><audio id="audio" controls></audio><meter id="level" min="0" max="1" value="0" aria-label="音量"></meter><p class="hint">音声に合わせて口が動きます。収録開始で先頭から再生し、映像と一緒に保存します。マイクは不要です。</p><details><summary>補助設定: マイクを使う</summary><button id="mic">マイクを接続</button><p class="hint">接続した場合だけマイク音声も混合します。</p></details></section>
+<section><span class="eyebrow">04 / SCRIPT</span><h2>字幕と台本</h2><label>1行につき1つの字幕<textarea id="script" rows="4" placeholder="あ、あの……こんにちは。&#10;望月京子です。"></textarea></label><div class="row"><button id="previous">← 前へ</button><button id="next">次へ →</button></div><label><input id="captions" type="checkbox" checked> 字幕を映像に入れる</label><p class="hint">字幕送り: ← → ／ 表情: 1〜3<br>字幕は手動で送ります。音声認識ではありません。</p></section>
+<section><span class="eyebrow">05 / DESIGN</span><h2>背景・字幕・演出</h2>
+<label>字幕の見た目<select id="captionStyle"><option value="navy">紺色の角丸字幕</option><option value="light">白い角丸字幕</option><option value="classic">従来の帯字幕</option></select></label>
+<label>動画の見出し<input id="title" type="text" maxlength="28" placeholder="はじめまして"></label>
+<label>デビューまで<select id="days"><option value="">表示しない</option><option value="14">14日前</option><option value="13">13日前</option><option value="12">12日前</option><option value="11">11日前</option><option value="10">10日前</option><option value="9">9日前</option><option value="8">8日前</option><option value="7">7日前</option><option value="6">6日前</option><option value="5">5日前</option><option value="4">4日前</option><option value="3">3日前</option><option value="2">2日前</option><option value="1">1日前</option><option value="0">0日前</option></select></label>
+<label><input id="branding" type="checkbox"> 採用ロゴを表示する</label>
+<label>場面の切り替え<select id="effect"><option value="none">なし</option><option value="in">やさしく登場（0.7秒）</option><option value="out">白へフェード（0.7秒）</option></select></label>
+<button id="replay">演出を再生</button><p class="hint">登場演出は収録開始時にも再生します。退場は収録中に選び、白くなってから停止します。</p>
+<div class="row"><button id="still">映像をPNG保存</button><button id="backgroundPng">背景だけPNG保存</button></div>
+</section><section><h2>配信にも</h2><a class="button" href="?output=1" target="_blank" rel="noopener">OBS用の映像表示 ↗</a><p class="hint">同じブラウザの操作画面から映像表示へ設定・表情・字幕を同期。OBSではこの画面のウィンドウをキャプチャしてください。</p></section>
+</aside></main><script type="module" src="studio.js"></script></body></html>

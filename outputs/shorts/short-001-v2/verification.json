@@ -1,0 +1,38 @@
+{
+  "status": "不合格",
+  "output": "outputs\\shorts\\short-001-v2\\kyoko-short-001.mp4",
+  "duration": 23.23,
+  "dimensions": [
+    1080,
+    1920
+  ],
+  "fps": 30,
+  "codecs": [
+    "H.264",
+    "AAC"
+  ],
+  "integratedLufs": -16.23,
+  "truePeakDbtp": -1.46,
+  "checks": [
+    "映像と音声を全尺デコード",
+    "解像度とコーデック",
+    "音声実尺と動画尺の一致",
+    "字幕タイムラインの連続性",
+    "音声ラウドネスとピーク",
+    "素材・台本・動画のハッシュ一致（現行レンダラーとの差異は別記）"
+  ],
+  "visualReview": {
+    "errors": [
+      "視覚レビュー判定: 不合格",
+      "未解消の視覚所見があります",
+      "未合格または証拠不足: 接地・床",
+      "未合格または証拠不足: 遮蔽・前後関係",
+      "未合格または証拠不足: 身体・姿勢",
+      "未合格または証拠不足: 時間・カメラ",
+      "未合格または証拠不足: 指摘・画面"
+    ],
+    "report": "visual-review.json"
+  },
+  "technicalStatus": "合格",
+  "rendererMatchesCurrentSource": false
+}

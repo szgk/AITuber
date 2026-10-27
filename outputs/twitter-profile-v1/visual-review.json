@@ -1,0 +1,54 @@
+{
+  "overall": "合格",
+  "unresolved": [],
+  "checks": [
+    {
+      "item": "接地・床",
+      "finding": "顔と肩のアイコン、抽象背景のヘッダーであり足・床はない。",
+      "result": "対象外"
+    },
+    {
+      "item": "遮蔽・前後関係",
+      "finding": "髪・顔・襟・リボンの接続を原寸生成画像と最終画像で確認。家具境界は存在せず対象外。",
+      "result": "合格"
+    },
+    {
+      "item": "身体・姿勢",
+      "finding": "両目は明確な黒い渦巻き。首と肩の接続に明らかな矛盾なし。",
+      "result": "合格"
+    },
+    {
+      "item": "時間・カメラ",
+      "finding": "静止画。",
+      "result": "対象外"
+    },
+    {
+      "item": "作画・光",
+      "finding": "黒い輪郭と簡潔な塗りを維持。紺・水色・ピンクが両画像で調和。",
+      "result": "合格"
+    },
+    {
+      "item": "指摘・画面",
+      "finding": "ぐるぐる目とロゴ使用を確認。円形プレビューで顔と頭頂の跳ね毛が収まる。ロゴの日本語と英字に欠落なし。",
+      "result": "合格"
+    }
+  ],
+  "inspectedEvidence": [
+    {
+      "sha256": "22B5C7A4D118F3DC8E6721A5D152575CF54AC703CF86AEE8BEA7A08EC50F16F7",
+      "path": "outputs/twitter-profile-v1/icon.png"
+    },
+    {
+      "sha256": "3A03B7677FFC2A3EAA44EA86F5A7DD14D17AD700B3C4B2BB39453731851DE3D0",
+      "path": "outputs/twitter-profile-v1/header.png"
+    },
+    {
+      "sha256": "A673CBD78123786B0E162A249381941B930753E549F2936B00887BA21609051F",
+      "path": "outputs/twitter-profile-v1/icon-circle-preview.png"
+    },
+    {
+      "sha256": "3EFC5592666A8AC09885F411C1826BC4B1FACCE5F4D0C38CE6101BC64F9EBA20",
+      "path": "outputs/twitter-profile-v1/icon-source.png"
+    }
+  ]
+}

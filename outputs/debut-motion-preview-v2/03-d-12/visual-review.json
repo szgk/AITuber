@@ -1,0 +1,83 @@
+{
+  "overall": "合格",
+  "scope": "無音・テスト用口開閉の動作確認版としての視覚判定。声付き本編・音声同期の判定ではない。",
+  "target": "video.mp4",
+  "sha256": "03dd33ec74f6c26e772fad555f7815929d32dc5e155a197afa7a0161209a68a8",
+  "inspectedEvidence": [
+    {
+      "path": "review\\full-sequence.png",
+      "sha256": "54e953ffb4a3af30e32a43c8ab4651f1bcd7b6617a03dba361495913c94ebed5"
+    },
+    {
+      "path": "review\\detail-04.png",
+      "sha256": "3801503e7410d04f22616f62306dfcd84ddfec38c60e36f2e52d6acdee061bff"
+    },
+    {
+      "path": "review\\hand-sequence.png",
+      "sha256": "e422de0091996a8ed28c3fce2b4b93c77982b83f1619c5a40e7b4cc24f9d6f00"
+    }
+  ],
+  "checks": [
+    {
+      "item": "接地・床",
+      "status": "対象外",
+      "findings": "全編に足・床が描かれていない。",
+      "evidence": [
+        "review\\full-sequence.png",
+        "review\\detail-04.png",
+        "review\\hand-sequence.png"
+      ]
+    },
+    {
+      "item": "遮蔽・前後関係",
+      "status": "合格",
+      "findings": "旧手の残像がなく、袖口と手首が接続。指・掌の形を保ったまま手が回転する。",
+      "evidence": [
+        "review\\full-sequence.png",
+        "review\\detail-04.png",
+        "review\\hand-sequence.png"
+      ]
+    },
+    {
+      "item": "身体・姿勢",
+      "status": "合格",
+      "findings": "指5本、指間距離と掌の形を保持。メッシュによる伸縮なし。03の小指も画面内に収まる。",
+      "evidence": [
+        "review\\full-sequence.png",
+        "review\\detail-04.png",
+        "review\\hand-sequence.png"
+      ]
+    },
+    {
+      "item": "時間・カメラ",
+      "status": "合格",
+      "findings": "全6秒の0.1秒刻み60連続フレームで、開始・中間・終了と動作の往復を確認。飛びや二重像なし。",
+      "evidence": [
+        "review\\full-sequence.png",
+        "review\\detail-04.png",
+        "review\\hand-sequence.png"
+      ]
+    },
+    {
+      "item": "作画・光",
+      "status": "合格",
+      "findings": "太い線とセル塗りを維持。口の方向が顔に沿い、旧口や大きな色の矩形が残らない。",
+      "evidence": [
+        "review\\full-sequence.png",
+        "review\\detail-04.png",
+        "review\\hand-sequence.png"
+      ]
+    },
+    {
+      "item": "指摘・画面",
+      "status": "合格",
+      "findings": "手の輪郭・指間距離を保ち、手首を支点にパーツ全体を回転して挨拶する。 顔中心の既定構図を維持。",
+      "evidence": [
+        "review\\full-sequence.png",
+        "review\\detail-04.png",
+        "review\\hand-sequence.png"
+      ]
+    }
+  ],
+  "unresolved": []
+}

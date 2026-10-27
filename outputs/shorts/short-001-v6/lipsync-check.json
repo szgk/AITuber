@@ -1,0 +1,42 @@
+[
+  {
+    "text": "あ、あの……こんにちは。",
+    "speechText": "あ、あの……こんにちは。",
+    "kana": "アアノコンニチワ",
+    "audibleFrames": 39,
+    "mouthOpenFrames": 39,
+    "coverage": 1.0
+  },
+  {
+    "text": "……あっ。机の後ろでした。",
+    "speechText": "……あっ。机の後ろでした。",
+    "kana": "アッツクエノウシロデシタ",
+    "audibleFrames": 52,
+    "mouthOpenFrames": 46,
+    "coverage": 0.885
+  },
+  {
+    "text": "はじめまして。望月京子です。",
+    "speechText": "はじめまして。望月京子です。",
+    "kana": "ハジメマシテモチズキキョオコデス",
+    "audibleFrames": 55,
+    "mouthOpenFrames": 55,
+    "coverage": 1.0
+  },
+  {
+    "text": "緊張すると、つい、顔を隠したくて……。",
+    "speechText": "緊張すると、つい、顔を隠したくて……。",
+    "kana": "キンチョオスルトツイカオオカクシタクテ",
+    "audibleFrames": 72,
+    "mouthOpenFrames": 72,
+    "coverage": 1.0
+  },
+  {
+    "text": "少しずつ、お話しできたら、うれしいです。",
+    "speechText": "少しずつ、おはなしできたら、うれしいです。",
+    "kana": "スコシズツオハナシデキタラウレシイデス",
+    "audibleFrames": 77,
+    "mouthOpenFrames": 76,
+    "coverage": 0.987
+  }
+]

@@ -21,7 +21,11 @@
     "prepare-data": "bash -c 'cd data/training && source ../../venv/bin/activate && python3 prepare_dataset.py'",
     "check-env": "bash -c 'source venv/bin/activate && python3 test_lora_setup.py'",
     "clean": "rm -rf outputs/ __pycache__/ *.pyc .pytest_cache/ ollama_models/",
-    "help": "echo 'Available commands: setup, train, chat, test, inference, ollama:setup, ollama:test, prepare-data, check-env, clean'"
+    "help": "echo 'Available commands: setup, train, chat, test, inference, ollama:setup, ollama:test, prepare-data, check-env, clean'",
+    "studio": "node frontend/studio/server.mjs",
+    "shorts:render": "python tools/shorts/render.py",
+    "shorts:preview": "python tools/shorts/render.py --preview",
+    "shorts:verify": "python tools/shorts/verify.py"
   },
   "keywords": [
     "AITuber",

@@ -1,0 +1,34 @@
+{
+  "video": "video.mp4",
+  "sha256": "ff68a5ce7d4e65d46c1755a865ee2d48840026dc8a8d3b083c08cc69db9a9eaa",
+  "asset": "assets/debut-animation/15.png",
+  "assetSha256": "55312c3d1de83d50f1a3b7e102fed2f1b041236867e07fb444fd596627cef7b0",
+  "rendererSha256": "caa2dbe63bb914dcb1cd5a373f8211026217996dfdf37b37a02f7741e2342c78",
+  "duration": 6.0,
+  "fps": 30,
+  "size": [
+    1080,
+    1080
+  ],
+  "status": "視覚レビュー待ち",
+  "motion": [
+    "頭と顔の揺れ",
+    "右上の跳ね毛の局所変形",
+    "手振り"
+  ],
+  "handAnimation": "手首支点の剛体回転・並進",
+  "handInputs": [
+    {
+      "path": "assets\\debut-animation\\rigid-hands\\15-hand.png",
+      "sha256": "a6d7e2d562d62289e9d36e0f1a6e6ecd5eb2abae7958abc7db8b63aba8fe2790"
+    },
+    {
+      "path": "assets\\debut-animation\\rigid-hands\\15-plate.png",
+      "sha256": "96bab9d625baaa8a4ba9f1825cf2d6831ad98d174fc4294cbc0383f56aa3a4df"
+    },
+    {
+      "path": "assets\\debut-animation\\rigid-hands\\rigs.json",
+      "sha256": "2089b85b638f9528f24f593a8056a13539dbcf5759062f23d07709edee7b220a"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "id": "short-001-v2",
+  "title": "隠れてご挨拶",
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "voiceConfig": "config/kyoko-voice.json",
+  "background": "assets/shorts/001/v2/room.png",
+  "poses": {
+    "standing": "assets/shorts/001/standing.png",
+    "speaking": "assets/shorts/001/speaking.png",
+    "crouch": "assets/shorts/001/crouch.png",
+    "hairRaise": "assets/shorts/001/v2/hair-raise.png",
+    "hairHide": "assets/shorts/001/v2/hair-hide.png",
+    "hairTuck": "assets/shorts/001/v2/hair-tuck.png"
+  },
+  "foregroundPolygon": [[0,0.366],[0.408,0.366],[0.416,0.382],[0.402,0.398],[0.402,0.552],[0.367,0.602],[0.336,0.602],[0.336,0.57],[0.15,0.57],[0.15,0.637],[0,0.637]],
+  "scenes": [
+    {"pose":"crouch","text":"あ、あの……こんにちは。","caption":"あ、あの……\nこんにちは。","x":0.16,"footY":0.65,"bodyHeight":0.37,"camera":1.1,"focus":[0.25,0.38],"behindDesk":true,"pauseAfter":0.65},
+    {"pose":"crouch","text":"……あっ。机の後ろでした。","caption":"……あっ。\n机の後ろでした。","x":0.16,"footY":0.65,"bodyHeight":0.37,"camera":1.14,"focus":[0.25,0.38],"behindDesk":true,"pauseAfter":0.75},
+    {"pose":"standing","text":"はじめまして。望月京子です。","caption":"はじめまして。\n望月京子です。","x":0.65,"footY":0.80,"bodyHeight":0.57,"camera":1,"focus":[0.55,0.5],"pauseAfter":0.5},
+    {"pose":"standing","poseSequence":[{"at":0,"pose":"standing"},{"at":0.08,"pose":"hairRaise"},{"at":0.26,"pose":"hairHide"},{"at":0.64,"pose":"hairTuck"},{"at":0.86,"pose":"standing"}],"poseTransition":0.14,"text":"緊張すると、つい、顔を隠したくて……。","caption":"緊張すると、つい、\n顔を隠したくて……。","x":0.65,"footY":0.80,"bodyHeight":0.57,"camera":1,"focus":[0.55,0.5],"pauseAfter":0.5},
+    {"pose":"standing","text":"少しずつ、お話しできたら、うれしいです。","caption":"少しずつ、お話しできたら\nうれしいです。","x":0.65,"footY":0.80,"bodyHeight":0.57,"camera":1.025,"focus":[0.60,0.46],"pauseAfter":1.5}
+  ],
+  "status": "初回動画の演出案。部屋・台詞を恒久設定として採用したものではない。"
+}

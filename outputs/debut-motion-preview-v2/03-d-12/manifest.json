@@ -1,0 +1,35 @@
+{
+  "video": "video.mp4",
+  "sha256": "03dd33ec74f6c26e772fad555f7815929d32dc5e155a197afa7a0161209a68a8",
+  "asset": "assets/debut-animation/03.png",
+  "assetSha256": "d110802f938b5539a87a1352f0823d3f1c415f967c98cbbe8747909eb26d79ca",
+  "rendererSha256": "e0814eddff698b614353ea1d5fa07166b1896da67a2121e0acd7e1f3e6561075",
+  "duration": 6.0,
+  "fps": 30,
+  "size": [
+    1080,
+    1080
+  ],
+  "status": "無音確認版として視覚・技術レビュー済み",
+  "motion": [
+    "頭と顔の揺れ",
+    "右上の跳ね毛の局所変形",
+    "手振り"
+  ],
+  "audio": "無音。口の開閉は演技確認用。",
+  "handAnimation": "手首を支点とする剛体回転・並進。局所変形なし。",
+  "handInputs": [
+    {
+      "path": "assets\\debut-animation\\rigid-hands\\03-hand.png",
+      "sha256": "561d8effcd2c202634bea5fa065eb5da44c50f76ac646da89d054ca68ba13bfd"
+    },
+    {
+      "path": "assets\\debut-animation\\rigid-hands\\03-plate.png",
+      "sha256": "569e8dae0713fe622afda8856dd954891fb9e9a1b0562a7d407917659f3dcd45"
+    },
+    {
+      "path": "assets\\debut-animation\\rigid-hands\\rigs.json",
+      "sha256": "2089b85b638f9528f24f593a8056a13539dbcf5759062f23d07709edee7b220a"
+    }
+  ]
+}

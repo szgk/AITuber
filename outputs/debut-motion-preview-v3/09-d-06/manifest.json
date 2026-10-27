@@ -1,0 +1,19 @@
+{
+  "video": "video.mp4",
+  "sha256": "e3e27940ed189e3531081da1a61a1608ba7c9e8be14d30803df57e860cffdd86",
+  "asset": "assets/debut-animation/09.png",
+  "assetSha256": "c9dc000fa79925490027841c52038f6dd59077b7de5cc3aa3817021d8e9541aa",
+  "rendererSha256": "caa2dbe63bb914dcb1cd5a373f8211026217996dfdf37b37a02f7741e2342c78",
+  "duration": 6.0,
+  "fps": 30,
+  "size": [
+    1080,
+    1080
+  ],
+  "status": "視覚レビュー待ち",
+  "motion": [
+    "頭と顔の揺れ",
+    "右上の跳ね毛の局所変形",
+    "ぐるぐる目の回転"
+  ]
+}

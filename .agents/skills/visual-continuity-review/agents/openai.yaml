@@ -1,0 +1,4 @@
+interface:
+  display_name: "映像の空間・連続性レビュー"
+  short_description: "足と床の接地、家具との前後関係や動きの矛盾を実画像で確認する"
+  default_prompt: "$visual-continuity-review を使い、最終画像・動画の空間と動きの矛盾を証拠付きでレビューしてください。"

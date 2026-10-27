@@ -1,0 +1,73 @@
+{
+  "overall": "合格",
+  "scope": "静止画ラフv4",
+  "target": "表情と顔アップのラフ.png",
+  "sha256": "af55b0d7257c3c24a2d3e1799de13dc0fd932686ecf70a5b8ba624ecff67db3b",
+  "inspectedEvidence": [
+    {
+      "path": "表情と顔アップのラフ.png",
+      "sha256": "af55b0d7257c3c24a2d3e1799de13dc0fd932686ecf70a5b8ba624ecff67db3b"
+    },
+    {
+      "path": "review\\panel-14.png",
+      "sha256": "bbf124978489d6d782a298504d811b1151a19f25e030e319b15f22807edc136d"
+    }
+  ],
+  "checks": [
+    {
+      "item": "接地・床",
+      "status": "対象外",
+      "findings": "顔アップで足と床は存在しない。",
+      "evidence": [
+        "表情と顔アップのラフ.png",
+        "review\\panel-14.png"
+      ]
+    },
+    {
+      "item": "遮蔽・前後関係",
+      "status": "合格",
+      "findings": "全体の段階公開と目隠しの構図を維持。家具なし。",
+      "evidence": [
+        "表情と顔アップのラフ.png",
+        "review\\panel-14.png"
+      ]
+    },
+    {
+      "item": "身体・姿勢",
+      "status": "合格",
+      "findings": "全体と14の拡大で顔、両手の輪郭に破綻なし。",
+      "evidence": [
+        "表情と顔アップのラフ.png",
+        "review\\panel-14.png"
+      ]
+    },
+    {
+      "item": "時間・カメラ",
+      "status": "対象外",
+      "findings": "静止画ラフのみ。",
+      "evidence": [
+        "表情と顔アップのラフ.png",
+        "review\\panel-14.png"
+      ]
+    },
+    {
+      "item": "作画・光",
+      "status": "合格",
+      "findings": "14の涙は黒い単純な輪郭と白ベタ。水色、透明感、リアルな光沢はなく汗の漫画表現と整合。",
+      "evidence": [
+        "表情と顔アップのラフ.png",
+        "review\\panel-14.png"
+      ]
+    },
+    {
+      "item": "指摘・画面",
+      "status": "合格",
+      "findings": "14の両目のぐるぐる目と涙、09のぐるぐる目、薄い頬染めと顔中心の構図を確認。",
+      "evidence": [
+        "表情と顔アップのラフ.png",
+        "review\\panel-14.png"
+      ]
+    }
+  ],
+  "unresolved": []
+}

@@ -1,0 +1,103 @@
+{
+  "overall": "合格",
+  "scope": "構図・表情の静止画ラフとしての判定。完成投稿画像や動画の承認ではない。",
+  "target": "表情と顔アップのラフ.png",
+  "sha256": "37308f0d301b50909f83bd7d77b595927028271d2dd330b23c721cb9fcb44dce",
+  "inspectedEvidence": [
+    {
+      "path": "表情と顔アップのラフ.png",
+      "sha256": "37308f0d301b50909f83bd7d77b595927028271d2dd330b23c721cb9fcb44dce"
+    },
+    {
+      "path": "review\\panel-03.png",
+      "sha256": "d14376696c525224c32b0d4eae31a8a68c435683de3d502ccb1f17ebd046ce08"
+    },
+    {
+      "path": "review\\panel-08.png",
+      "sha256": "1bfd567b514242dbc7eb5bd69bb36b9d481f138a11cd384c741475da869d6da6"
+    },
+    {
+      "path": "review\\panel-13.png",
+      "sha256": "864f6a30d4b0ee4c8aa9aa4536a3d403fc6ab1d9e602a61be8c697d398094cf3"
+    },
+    {
+      "path": "review\\panel-15.png",
+      "sha256": "a42d68ecf7be36da3c36937adf912af112f17a73cf045a0bf0dbbbf3bdccc21f"
+    }
+  ],
+  "checks": [
+    {
+      "item": "接地・床",
+      "status": "対象外",
+      "findings": "顔の寄りと頭頂部の図版。足・床は描かれず接地の判断対象なし。",
+      "evidence": [
+        "表情と顔アップのラフ.png",
+        "review\\panel-03.png",
+        "review\\panel-08.png",
+        "review\\panel-13.png",
+        "review\\panel-15.png"
+      ]
+    },
+    {
+      "item": "遮蔽・前後関係",
+      "status": "合格",
+      "findings": "01〜05は紺の図形で顔を隠し、08は片目だけが見える。家具はなく境界拡大は03・08を確認。",
+      "evidence": [
+        "表情と顔アップのラフ.png",
+        "review\\panel-03.png",
+        "review\\panel-08.png",
+        "review\\panel-13.png",
+        "review\\panel-15.png"
+      ]
+    },
+    {
+      "item": "身体・姿勢",
+      "status": "合格",
+      "findings": "03・13・15の手と指を拡大確認。挨拶の手は5本、13の頬に添える指と握る指の輪郭はラフとして成立。",
+      "evidence": [
+        "表情と顔アップのラフ.png",
+        "review\\panel-03.png",
+        "review\\panel-08.png",
+        "review\\panel-13.png",
+        "review\\panel-15.png"
+      ]
+    },
+    {
+      "item": "時間・カメラ",
+      "status": "対象外",
+      "findings": "静止画ラフ。動きや口パク、切替の連続性は未確認。",
+      "evidence": [
+        "表情と顔アップのラフ.png",
+        "review\\panel-03.png",
+        "review\\panel-08.png",
+        "review\\panel-13.png",
+        "review\\panel-15.png"
+      ]
+    },
+    {
+      "item": "作画・光",
+      "status": "合格",
+      "findings": "太い黒線・灰色の目・黒髪・紺衣装を維持。表情の誇張は意図されたラフ。",
+      "evidence": [
+        "表情と顔アップのラフ.png",
+        "review\\panel-03.png",
+        "review\\panel-08.png",
+        "review\\panel-13.png",
+        "review\\panel-15.png"
+      ]
+    },
+    {
+      "item": "指摘・画面",
+      "status": "合格",
+      "findings": "09〜15は顔が画面の大部分を占める。緊張・笑顔・安堵・考え込みを明確に描き分け、お辞儀なし。",
+      "evidence": [
+        "表情と顔アップのラフ.png",
+        "review\\panel-03.png",
+        "review\\panel-08.png",
+        "review\\panel-13.png",
+        "review\\panel-15.png"
+      ]
+    }
+  ],
+  "unresolved": []
+}

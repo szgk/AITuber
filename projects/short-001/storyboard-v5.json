@@ -1,0 +1,315 @@
+{
+  "id": "short-001-v5",
+  "title": "隠れてご挨拶",
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "voiceConfig": "config/kyoko-voice.json",
+  "background": "assets/shorts/001/v2/room.png",
+  "poses": {
+    "standing": "assets/shorts/001/standing.png",
+    "crouch": "assets/shorts/001/crouch.png",
+    "hairRaise": "assets/shorts/001/v2/hair-raise.png",
+    "hairHide": "assets/shorts/001/v2/hair-hide.png",
+    "hairTuck": "assets/shorts/001/v2/hair-tuck.png"
+  },
+  "foregroundPolygon": [
+    [
+      0,
+      0.366
+    ],
+    [
+      0.408,
+      0.366
+    ],
+    [
+      0.416,
+      0.382
+    ],
+    [
+      0.402,
+      0.398
+    ],
+    [
+      0.402,
+      0.552
+    ],
+    [
+      0.367,
+      0.602
+    ],
+    [
+      0.336,
+      0.602
+    ],
+    [
+      0.336,
+      0.569
+    ],
+    [
+      0,
+      0.569
+    ]
+  ],
+  "scenes": [
+    {
+      "pose": "crouch",
+      "text": "あ、あの……こんにちは。",
+      "caption": "あ、あの……\nこんにちは。",
+      "x": 0.115,
+      "footY": 0.557,
+      "bodyHeight": 0.255,
+      "camera": 2.25,
+      "focus": [
+        0.205,
+        0.465
+      ],
+      "behindDesk": true,
+      "pauseAfter": 0.65,
+      "transition": "cut",
+      "showNameLabel": false,
+      "peekDrop": 0
+    },
+    {
+      "pose": "crouch",
+      "text": "……あっ。机の後ろでした。",
+      "caption": "……あっ。\n机の後ろでした。",
+      "x": 0.115,
+      "footY": 0.557,
+      "bodyHeight": 0.255,
+      "camera": 2.25,
+      "focus": [
+        0.205,
+        0.465
+      ],
+      "behindDesk": true,
+      "pauseAfter": 0.75,
+      "transition": "cut",
+      "showNameLabel": false,
+      "peekDrop": 0
+    },
+    {
+      "pose": "standing",
+      "text": "はじめまして。望月京子です。",
+      "caption": "はじめまして。\n望月京子です。",
+      "x": 0.65,
+      "footY": 0.8,
+      "bodyHeight": 0.57,
+      "camera": 3.1,
+      "focus": [
+        0.65,
+        0.355
+      ],
+      "pauseAfter": 0.5,
+      "transition": "cut",
+      "showNameLabel": false
+    },
+    {
+      "pose": "standing",
+      "poseSequence": [
+        {
+          "at": 0,
+          "pose": "standing"
+        },
+        {
+          "at": 0.08,
+          "pose": "hairRaise"
+        },
+        {
+          "at": 0.26,
+          "pose": "hairHide"
+        },
+        {
+          "at": 0.64,
+          "pose": "hairTuck"
+        },
+        {
+          "at": 0.86,
+          "pose": "standing"
+        }
+      ],
+      "poseTransition": 0,
+      "text": "緊張すると、つい、顔を隠したくて……。",
+      "caption": "緊張すると、つい、\n顔を隠したくて……。",
+      "x": 0.65,
+      "footY": 0.8,
+      "bodyHeight": 0.57,
+      "camera": 3.1,
+      "focus": [
+        0.65,
+        0.355
+      ],
+      "pauseAfter": 0.5,
+      "transition": "cut",
+      "showNameLabel": false
+    },
+    {
+      "pose": "standing",
+      "text": "少しずつ、お話しできたら、うれしいです。",
+      "caption": "少しずつ、お話しできたら\nうれしいです。",
+      "x": 0.65,
+      "footY": 0.8,
+      "bodyHeight": 0.57,
+      "camera": 3.1,
+      "focus": [
+        0.65,
+        0.355
+      ],
+      "pauseAfter": 1.5,
+      "transition": "cut",
+      "showNameLabel": false,
+      "speechText": "少しずつ、おはなしできたら、うれしいです。"
+    }
+  ],
+  "status": "初回動画の演出案。部屋・台詞を恒久設定として採用したものではない。",
+  "foregroundObjects": [
+    [
+      [
+        0.157,
+        0.33
+      ],
+      [
+        0.174,
+        0.331
+      ],
+      [
+        0.17,
+        0.312
+      ],
+      [
+        0.177,
+        0.311
+      ],
+      [
+        0.184,
+        0.33
+      ],
+      [
+        0.19,
+        0.305
+      ],
+      [
+        0.197,
+        0.307
+      ],
+      [
+        0.191,
+        0.332
+      ],
+      [
+        0.205,
+        0.313
+      ],
+      [
+        0.212,
+        0.317
+      ],
+      [
+        0.2,
+        0.34
+      ],
+      [
+        0.211,
+        0.342
+      ],
+      [
+        0.208,
+        0.371
+      ],
+      [
+        0.199,
+        0.376
+      ],
+      [
+        0.159,
+        0.374
+      ]
+    ]
+  ],
+  "foregroundSilhouettes": [
+    {
+      "name": "机上ライト",
+      "roi": [
+        0,
+        0.23,
+        0.163,
+        0.38
+      ],
+      "threshold": 175
+    }
+  ],
+  "mouths": {
+    "standing": {
+      "center": [
+        0.5061188811188811,
+        0.18127090301003346
+      ],
+      "erase": [
+        0.4597902097902098,
+        0.1705685618729097,
+        0.5524475524475524,
+        0.1919732441471572
+      ],
+      "width": 0.055,
+      "height": 0.014,
+      "closedMouthBox": [
+        269,
+        264,
+        310,
+        278
+      ],
+      "landmarkSourceSize": [
+        572,
+        1495
+      ]
+    },
+    "hairRaise": {
+      "center": [
+        0.506108202443281,
+        0.18157543391188252
+      ],
+      "erase": [
+        0.45898778359511344,
+        0.17089452603471295,
+        0.5532286212914486,
+        0.19225634178905207
+      ],
+      "width": 0.055,
+      "height": 0.014,
+      "closedMouthBox": [
+        269,
+        265,
+        311,
+        279
+      ],
+      "landmarkSourceSize": [
+        573,
+        1498
+      ]
+    },
+    "hairTuck": {
+      "center": [
+        0.49822695035460995,
+        0.18372093023255814
+      ],
+      "erase": [
+        0.4574468085106383,
+        0.17408637873754154,
+        0.5390070921985816,
+        0.19335548172757475
+      ],
+      "width": 0.05,
+      "height": 0.013,
+      "closedMouthBox": [
+        264,
+        271,
+        298,
+        282
+      ],
+      "landmarkSourceSize": [
+        564,
+        1505
+      ]
+    }
+  }
+}

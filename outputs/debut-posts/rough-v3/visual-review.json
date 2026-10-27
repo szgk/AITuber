@@ -1,0 +1,93 @@
+{
+  "overall": "合格",
+  "scope": "静止画ラフv3の視覚確認",
+  "target": "表情と顔アップのラフ.png",
+  "sha256": "9e3ff5d3cc85f444718b57df76f65a0c1079a63d2a9acb120fba7fb2793ad385",
+  "inspectedEvidence": [
+    {
+      "path": "表情と顔アップのラフ.png",
+      "sha256": "9e3ff5d3cc85f444718b57df76f65a0c1079a63d2a9acb120fba7fb2793ad385"
+    },
+    {
+      "path": "review\\panel-09.png",
+      "sha256": "9f16f6d1d0cf0e6883959891755b017cfbab25ef433e61885d8c9f94439f9405"
+    },
+    {
+      "path": "review\\panel-14.png",
+      "sha256": "8a3c18f52536313f186c63c3639ac8becae0745773734f397f172e375fad935c"
+    },
+    {
+      "path": "review\\panel-15.png",
+      "sha256": "d15867a84500fdaecdaf5e2f1296b3a6ce9763e8be411a91848351d38fcd136b"
+    }
+  ],
+  "checks": [
+    {
+      "item": "接地・床",
+      "status": "対象外",
+      "findings": "顔アップで足・床なし。",
+      "evidence": [
+        "表情と顔アップのラフ.png",
+        "review\\panel-09.png",
+        "review\\panel-14.png",
+        "review\\panel-15.png"
+      ]
+    },
+    {
+      "item": "遮蔽・前後関係",
+      "status": "合格",
+      "findings": "全体一覧の段階公開と目隠し境界を確認。家具はなく対象外。",
+      "evidence": [
+        "表情と顔アップのラフ.png",
+        "review\\panel-09.png",
+        "review\\panel-14.png",
+        "review\\panel-15.png"
+      ]
+    },
+    {
+      "item": "身体・姿勢",
+      "status": "合格",
+      "findings": "14の両手と15の挨拶の5本指を拡大確認。腕や顔の増殖なし。",
+      "evidence": [
+        "表情と顔アップのラフ.png",
+        "review\\panel-09.png",
+        "review\\panel-14.png",
+        "review\\panel-15.png"
+      ]
+    },
+    {
+      "item": "時間・カメラ",
+      "status": "対象外",
+      "findings": "静止画ラフのみ。動画未制作。",
+      "evidence": [
+        "表情と顔アップのラフ.png",
+        "review\\panel-09.png",
+        "review\\panel-14.png",
+        "review\\panel-15.png"
+      ]
+    },
+    {
+      "item": "作画・光",
+      "status": "合格",
+      "findings": "既存ラフと同じ線・塗り。06〜15の強い頬の赤と斜線が淡くなった。",
+      "evidence": [
+        "表情と顔アップのラフ.png",
+        "review\\panel-09.png",
+        "review\\panel-14.png",
+        "review\\panel-15.png"
+      ]
+    },
+    {
+      "item": "指摘・画面",
+      "status": "合格",
+      "findings": "09は両目の黒い渦巻き、14も両目の渦巻きと下まぶたにたまる涙を拡大確認。顔中心の構図を維持。",
+      "evidence": [
+        "表情と顔アップのラフ.png",
+        "review\\panel-09.png",
+        "review\\panel-14.png",
+        "review\\panel-15.png"
+      ]
+    }
+  ],
+  "unresolved": []
+}

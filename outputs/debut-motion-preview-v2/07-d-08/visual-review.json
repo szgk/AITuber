@@ -1,0 +1,74 @@
+{
+  "overall": "合格",
+  "scope": "無音・テスト用口開閉の動作確認版としての視覚判定。声付き本編・音声同期の判定ではない。",
+  "target": "video.mp4",
+  "sha256": "899fd49be12c8df9c4ce4db396c5631dfeaeec6f2c3e8fdf5ed3e50d8c36824a",
+  "inspectedEvidence": [
+    {
+      "path": "review\\full-sequence.png",
+      "sha256": "04c0a49c83c342a195f1ef1abc66942488483ed5abc6a906ad4f6c219c4193a2"
+    },
+    {
+      "path": "review\\detail-04.png",
+      "sha256": "5ae330002a306ef8f57e6e3d486a666e083a0ab75f0c28631734ed7e296ad79c"
+    }
+  ],
+  "checks": [
+    {
+      "item": "接地・床",
+      "status": "対象外",
+      "findings": "全編に足・床が描かれていない。",
+      "evidence": [
+        "review\\full-sequence.png",
+        "review\\detail-04.png"
+      ]
+    },
+    {
+      "item": "遮蔽・前後関係",
+      "status": "合格",
+      "findings": "実動画の前景・髪・手・顔の境界を確認。家具は存在せず対象外。",
+      "evidence": [
+        "review\\full-sequence.png",
+        "review\\detail-04.png"
+      ]
+    },
+    {
+      "item": "身体・姿勢",
+      "status": "合格",
+      "findings": "原画の身体を局所的に変形。手や顔の増殖、切断なし。目を出さない口元の寄りで開閉。旧口が残ったピンクの矩形は修正後の実動画で消失を確認。",
+      "evidence": [
+        "review\\full-sequence.png",
+        "review\\detail-04.png"
+      ]
+    },
+    {
+      "item": "時間・カメラ",
+      "status": "合格",
+      "findings": "全6秒の0.1秒刻み60連続フレームで、開始・中間・終了と動作の往復を確認。飛びや二重像なし。",
+      "evidence": [
+        "review\\full-sequence.png",
+        "review\\detail-04.png"
+      ]
+    },
+    {
+      "item": "作画・光",
+      "status": "合格",
+      "findings": "太い線とセル塗りを維持。口の方向が顔に沿い、旧口や大きな色の矩形が残らない。",
+      "evidence": [
+        "review\\full-sequence.png",
+        "review\\detail-04.png"
+      ]
+    },
+    {
+      "item": "指摘・画面",
+      "status": "合格",
+      "findings": "目を出さない口元の寄りで開閉。旧口が残ったピンクの矩形は修正後の実動画で消失を確認。 顔中心の既定構図を維持。",
+      "evidence": [
+        "review\\full-sequence.png",
+        "review\\detail-04.png"
+      ]
+    }
+  ],
+  "unresolved": [],
+  "reviewReuse": "動画SHA-256が旧版と同一。前回の実出力のレビューを引き継ぐ。"
+}

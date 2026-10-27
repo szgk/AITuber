@@ -1,0 +1,452 @@
+{
+  "status": "合格",
+  "output": "outputs\\shorts\\short-001-v5\\kyoko-short-001.mp4",
+  "outputHash": "2ca441626b798408faed33a68b637383800814d72749cb1e69e3d4a2074774e5",
+  "method": "実MP4の時系列フレームと足元拡大を表示して確認する",
+  "sheets": [
+    "visual-review/2ca441626b798408/overview-01.jpg",
+    "visual-review/2ca441626b798408/overview-02.jpg",
+    "visual-review/2ca441626b798408/feet-01.jpg",
+    "visual-review/2ca441626b798408/feet-02.jpg",
+    "visual-review/2ca441626b798408/feet-03.jpg",
+    "visual-review/2ca441626b798408/feet-04.jpg"
+  ],
+  "samples": [
+    {
+      "seconds": 0.8,
+      "frame": "visual-review/2ca441626b798408/frame-000-0.800.png",
+      "feet": "visual-review/2ca441626b798408/feet-000.png"
+    },
+    {
+      "seconds": 1.0,
+      "frame": "visual-review/2ca441626b798408/frame-001-1.000.png",
+      "feet": "visual-review/2ca441626b798408/feet-001.png"
+    },
+    {
+      "seconds": 2.4,
+      "frame": "visual-review/2ca441626b798408/frame-002-2.400.png",
+      "feet": "visual-review/2ca441626b798408/feet-002.png"
+    },
+    {
+      "seconds": 3.0,
+      "frame": "visual-review/2ca441626b798408/frame-003-3.000.png",
+      "feet": "visual-review/2ca441626b798408/feet-003.png"
+    },
+    {
+      "seconds": 4.0,
+      "frame": "visual-review/2ca441626b798408/frame-004-4.000.png",
+      "feet": "visual-review/2ca441626b798408/feet-004.png"
+    },
+    {
+      "seconds": 4.233333333333333,
+      "frame": "visual-review/2ca441626b798408/frame-005-4.233.png",
+      "feet": "visual-review/2ca441626b798408/feet-005.png"
+    },
+    {
+      "seconds": 4.366666666666666,
+      "frame": "visual-review/2ca441626b798408/frame-006-4.367.png",
+      "feet": "visual-review/2ca441626b798408/feet-006.png"
+    },
+    {
+      "seconds": 4.5,
+      "frame": "visual-review/2ca441626b798408/frame-007-4.500.png",
+      "feet": "visual-review/2ca441626b798408/feet-007.png"
+    },
+    {
+      "seconds": 5.0,
+      "frame": "visual-review/2ca441626b798408/frame-008-5.000.png",
+      "feet": "visual-review/2ca441626b798408/feet-008.png"
+    },
+    {
+      "seconds": 6.066666666666666,
+      "frame": "visual-review/2ca441626b798408/frame-009-6.067.png",
+      "feet": "visual-review/2ca441626b798408/feet-009.png"
+    },
+    {
+      "seconds": 7.0,
+      "frame": "visual-review/2ca441626b798408/frame-010-7.000.png",
+      "feet": "visual-review/2ca441626b798408/feet-010.png"
+    },
+    {
+      "seconds": 7.6,
+      "frame": "visual-review/2ca441626b798408/frame-011-7.600.png",
+      "feet": "visual-review/2ca441626b798408/feet-011.png"
+    },
+    {
+      "seconds": 7.833333333333333,
+      "frame": "visual-review/2ca441626b798408/frame-012-7.833.png",
+      "feet": "visual-review/2ca441626b798408/feet-012.png"
+    },
+    {
+      "seconds": 7.966666666666667,
+      "frame": "visual-review/2ca441626b798408/frame-013-7.967.png",
+      "feet": "visual-review/2ca441626b798408/feet-013.png"
+    },
+    {
+      "seconds": 8.1,
+      "frame": "visual-review/2ca441626b798408/frame-014-8.100.png",
+      "feet": "visual-review/2ca441626b798408/feet-014.png"
+    },
+    {
+      "seconds": 9.0,
+      "frame": "visual-review/2ca441626b798408/frame-015-9.000.png",
+      "feet": "visual-review/2ca441626b798408/feet-015.png"
+    },
+    {
+      "seconds": 9.833333333333334,
+      "frame": "visual-review/2ca441626b798408/frame-016-9.833.png",
+      "feet": "visual-review/2ca441626b798408/feet-016.png"
+    },
+    {
+      "seconds": 11.0,
+      "frame": "visual-review/2ca441626b798408/frame-017-11.000.png",
+      "feet": "visual-review/2ca441626b798408/feet-017.png"
+    },
+    {
+      "seconds": 11.533333333333333,
+      "frame": "visual-review/2ca441626b798408/frame-018-11.533.png",
+      "feet": "visual-review/2ca441626b798408/feet-018.png"
+    },
+    {
+      "seconds": 11.766666666666667,
+      "frame": "visual-review/2ca441626b798408/frame-019-11.767.png",
+      "feet": "visual-review/2ca441626b798408/feet-019.png"
+    },
+    {
+      "seconds": 11.866666666666667,
+      "frame": "visual-review/2ca441626b798408/frame-020-11.867.png",
+      "feet": "visual-review/2ca441626b798408/feet-020.png"
+    },
+    {
+      "seconds": 11.9,
+      "frame": "visual-review/2ca441626b798408/frame-021-11.900.png",
+      "feet": "visual-review/2ca441626b798408/feet-021.png"
+    },
+    {
+      "seconds": 12.033333333333333,
+      "frame": "visual-review/2ca441626b798408/frame-022-12.033.png",
+      "feet": "visual-review/2ca441626b798408/feet-022.png"
+    },
+    {
+      "seconds": 12.166666666666666,
+      "frame": "visual-review/2ca441626b798408/frame-023-12.167.png",
+      "feet": "visual-review/2ca441626b798408/feet-023.png"
+    },
+    {
+      "seconds": 12.3,
+      "frame": "visual-review/2ca441626b798408/frame-024-12.300.png",
+      "feet": "visual-review/2ca441626b798408/feet-024.png"
+    },
+    {
+      "seconds": 12.466666666666667,
+      "frame": "visual-review/2ca441626b798408/frame-025-12.467.png",
+      "feet": "visual-review/2ca441626b798408/feet-025.png"
+    },
+    {
+      "seconds": 13.0,
+      "frame": "visual-review/2ca441626b798408/frame-026-13.000.png",
+      "feet": "visual-review/2ca441626b798408/feet-026.png"
+    },
+    {
+      "seconds": 13.133333333333333,
+      "frame": "visual-review/2ca441626b798408/frame-027-13.133.png",
+      "feet": "visual-review/2ca441626b798408/feet-027.png"
+    },
+    {
+      "seconds": 13.233333333333333,
+      "frame": "visual-review/2ca441626b798408/frame-028-13.233.png",
+      "feet": "visual-review/2ca441626b798408/feet-028.png"
+    },
+    {
+      "seconds": 13.4,
+      "frame": "visual-review/2ca441626b798408/frame-029-13.400.png",
+      "feet": "visual-review/2ca441626b798408/feet-029.png"
+    },
+    {
+      "seconds": 14.433333333333334,
+      "frame": "visual-review/2ca441626b798408/frame-030-14.433.png",
+      "feet": "visual-review/2ca441626b798408/feet-030.png"
+    },
+    {
+      "seconds": 15.0,
+      "frame": "visual-review/2ca441626b798408/frame-031-15.000.png",
+      "feet": "visual-review/2ca441626b798408/feet-031.png"
+    },
+    {
+      "seconds": 15.133333333333333,
+      "frame": "visual-review/2ca441626b798408/frame-032-15.133.png",
+      "feet": "visual-review/2ca441626b798408/feet-032.png"
+    },
+    {
+      "seconds": 15.233333333333333,
+      "frame": "visual-review/2ca441626b798408/frame-033-15.233.png",
+      "feet": "visual-review/2ca441626b798408/feet-033.png"
+    },
+    {
+      "seconds": 15.4,
+      "frame": "visual-review/2ca441626b798408/frame-034-15.400.png",
+      "feet": "visual-review/2ca441626b798408/feet-034.png"
+    },
+    {
+      "seconds": 16.266666666666666,
+      "frame": "visual-review/2ca441626b798408/frame-035-16.267.png",
+      "feet": "visual-review/2ca441626b798408/feet-035.png"
+    },
+    {
+      "seconds": 16.366666666666667,
+      "frame": "visual-review/2ca441626b798408/frame-036-16.367.png",
+      "feet": "visual-review/2ca441626b798408/feet-036.png"
+    },
+    {
+      "seconds": 16.566666666666666,
+      "frame": "visual-review/2ca441626b798408/frame-037-16.567.png",
+      "feet": "visual-review/2ca441626b798408/feet-037.png"
+    },
+    {
+      "seconds": 16.8,
+      "frame": "visual-review/2ca441626b798408/frame-038-16.800.png",
+      "feet": "visual-review/2ca441626b798408/feet-038.png"
+    },
+    {
+      "seconds": 17.0,
+      "frame": "visual-review/2ca441626b798408/frame-039-17.000.png",
+      "feet": "visual-review/2ca441626b798408/feet-039.png"
+    },
+    {
+      "seconds": 17.133333333333333,
+      "frame": "visual-review/2ca441626b798408/frame-040-17.133.png",
+      "feet": "visual-review/2ca441626b798408/feet-040.png"
+    },
+    {
+      "seconds": 17.3,
+      "frame": "visual-review/2ca441626b798408/frame-041-17.300.png",
+      "feet": "visual-review/2ca441626b798408/feet-041.png"
+    },
+    {
+      "seconds": 19.0,
+      "frame": "visual-review/2ca441626b798408/frame-042-19.000.png",
+      "feet": "visual-review/2ca441626b798408/feet-042.png"
+    },
+    {
+      "seconds": 20.033333333333335,
+      "frame": "visual-review/2ca441626b798408/frame-043-20.033.png",
+      "feet": "visual-review/2ca441626b798408/feet-043.png"
+    },
+    {
+      "seconds": 21.0,
+      "frame": "visual-review/2ca441626b798408/frame-044-21.000.png",
+      "feet": "visual-review/2ca441626b798408/feet-044.png"
+    },
+    {
+      "seconds": 22.766666666666666,
+      "frame": "visual-review/2ca441626b798408/frame-045-22.767.png",
+      "feet": "visual-review/2ca441626b798408/feet-045.png"
+    },
+    {
+      "seconds": 22.966666666666665,
+      "frame": "visual-review/2ca441626b798408/frame-046-22.967.png",
+      "feet": "visual-review/2ca441626b798408/feet-046.png"
+    }
+  ],
+  "evidence": {
+    "visual-review/2ca441626b798408/feet-000.png": "445ce4ca68624e704eb4bbdeb3d58c7bd3deed0f372826b61b93e772d49b14fc",
+    "visual-review/2ca441626b798408/feet-001.png": "d8e9656888831975c49c1689c56d3f3f7febfda42d05dcd1b0fcc81dd791e4b4",
+    "visual-review/2ca441626b798408/feet-002.png": "4919ed09e0fc7a257ed78ca3c1933c753624c99276c17e28a1fb166e729a1266",
+    "visual-review/2ca441626b798408/feet-003.png": "ad3efaa4ff4018647031eb8212a949a76327d91aefc1340f9659eb3ce23c4fae",
+    "visual-review/2ca441626b798408/feet-004.png": "fcb614c7583a1d7e990b322feaf79b240c5ac4b5a1e08a7133bea396cc867758",
+    "visual-review/2ca441626b798408/feet-005.png": "51016b2bb181ecb048158db461ae421c092d36fd89bd10a56a30b990c1106b0a",
+    "visual-review/2ca441626b798408/feet-006.png": "59ad4e9bc09b9a590fa62447fe72284d15261b115d117c8f40b2a24235150ef0",
+    "visual-review/2ca441626b798408/feet-007.png": "5aaea1ad732d1f81085ae9b5dd2d5c1250a50394a633bd5675264300d857c0b0",
+    "visual-review/2ca441626b798408/feet-008.png": "11b3f27125322db332040b408b2a941c9f2d633833fd086ac2b473f27baa0df4",
+    "visual-review/2ca441626b798408/feet-009.png": "cff0a3cd861b5dc9f01dca517670795b1afa22ad77513f5311eb54f401617324",
+    "visual-review/2ca441626b798408/feet-01.jpg": "32a2ffb62e7b4f27637c51776bb550c2d633bc63a91db7fe30f967dd403cdb47",
+    "visual-review/2ca441626b798408/feet-010.png": "7b970f0a8e3b5078895e9a97462e60ec79ee95c84a0d832900bde83dc2a598c2",
+    "visual-review/2ca441626b798408/feet-011.png": "8c40c3a730372096b01deae4011c1d107f06898aa765e53f97bf6b990b30a836",
+    "visual-review/2ca441626b798408/feet-012.png": "4a98286e29a3a02bcab5181fa79deb028dc6fa4038701574a2a3525f1d468452",
+    "visual-review/2ca441626b798408/feet-013.png": "931f0e0620061438deb02ed6fb0f727111021bb4d0665d896a94f43fcc83b3bd",
+    "visual-review/2ca441626b798408/feet-014.png": "e59adeceec6ca94577ddb44bb6d217ed63d7aef779db2ba70eed240f7b7cfc53",
+    "visual-review/2ca441626b798408/feet-015.png": "7578aa3f6122be5a61f2b562e69550a50432c356752cb176185a307a16afdb52",
+    "visual-review/2ca441626b798408/feet-016.png": "3ce306bb90f1faf5ea45ff57ba3028bed0d7f38f4ffc27bdb4cb3d75ba2a6ad5",
+    "visual-review/2ca441626b798408/feet-017.png": "b608af2877ecefc235338e404fed45609a641e8be1b478bc055626ad74e65162",
+    "visual-review/2ca441626b798408/feet-018.png": "8b2e86402813a3f31fdfbbfdd6509329b899a6786da679d1e6d45d54b6370a6d",
+    "visual-review/2ca441626b798408/feet-019.png": "22abbac6dbc779c15fe8f5b81b79dcd2dd9f2c1ce0a04c66b1ce627e898b6cdc",
+    "visual-review/2ca441626b798408/feet-02.jpg": "5d19dd6e370f94bce599091ce419066a13f08629354ffbb05fd124995de50ded",
+    "visual-review/2ca441626b798408/feet-020.png": "cb6e047644b8457a1f5bba6978d5be51284224c456074f70e35cbba55f59c7d2",
+    "visual-review/2ca441626b798408/feet-021.png": "9a4ebab1a65a68273c43ce2bf0aeb30b15dab25659addddf67c877d518059a4f",
+    "visual-review/2ca441626b798408/feet-022.png": "cdef3189461c04fa8933ff15dac9dff1d773aa2aa57d0c67da811c7c17c6f106",
+    "visual-review/2ca441626b798408/feet-023.png": "08ae897a6fe7ea7c2df104d1a3f7d0f45f52012d2b5242c97cb29fd85d786176",
+    "visual-review/2ca441626b798408/feet-024.png": "733635bc6c6843a56ca45940408c4c445e33570886b7fd54d02062db03055bd1",
+    "visual-review/2ca441626b798408/feet-025.png": "14e02fc35d428a94235bc464109c4987a0c2692d9f5de872c46c4cffde213dac",
+    "visual-review/2ca441626b798408/feet-026.png": "aaa8ea7d6756bcb9d76a6cecb9502f4e9a6833dffe9e98a78525f0d64e55ab3b",
+    "visual-review/2ca441626b798408/feet-027.png": "576fc08cf5e70bdf48d24feeccd893c7dc6cbe4e668f2d8b171f999cca6b8e47",
+    "visual-review/2ca441626b798408/feet-028.png": "d2e90435b7f965b9cb7d9b66743cf7a37bf91466b4e29edbe17beedb2365971b",
+    "visual-review/2ca441626b798408/feet-029.png": "719c9d5cd6c778e0b0a3d6072b6bc29f0782d23d85d42fbdd098dffb937a6ff0",
+    "visual-review/2ca441626b798408/feet-03.jpg": "a294bc0eb73d378128e726b9846019fdc78dbb560ddc760f98434634b0c49fcd",
+    "visual-review/2ca441626b798408/feet-030.png": "7f8f3323ab3efc2c51ace4819f972b49fbe5022e9081619b513bee02ed619b87",
+    "visual-review/2ca441626b798408/feet-031.png": "0a759b315c0f467041ccefd400056a55cf8b1cad6a7c7c6d32a1dea7b8d94b2d",
+    "visual-review/2ca441626b798408/feet-032.png": "ce5df9b0f0036c11dd5d9ba326b3cb379cd99ce64b71b92a65b395e0817c0362",
+    "visual-review/2ca441626b798408/feet-033.png": "0dd426dbfbd83cd7db4fa5c05b48b070f30af029fdb1130d42948ce8c32a882f",
+    "visual-review/2ca441626b798408/feet-034.png": "2fdf6b69dbf35a9a41862d84c85cb7d2db8add9b948468c2e49758274612e2a3",
+    "visual-review/2ca441626b798408/feet-035.png": "86906df02dff89dff98bbd3327ae598b7f3722afafa53764f03361b536286883",
+    "visual-review/2ca441626b798408/feet-036.png": "de1e393f17b5b65e69af437cbd16388e551405842daadc6141015333d097f44c",
+    "visual-review/2ca441626b798408/feet-037.png": "386e4c676ac59da166b299cecb98a4db62a6585adff7ad2d4ed7345237df7073",
+    "visual-review/2ca441626b798408/feet-038.png": "081268161a5bace4b83d6f676f9ffad47e0f27b8a345481e0e9c969362f64263",
+    "visual-review/2ca441626b798408/feet-039.png": "85ffbc616afbe9d1fa757d3a1481fc6831cb27de57da7b230d85613577529a1b",
+    "visual-review/2ca441626b798408/feet-04.jpg": "f5be47e789e3448a511024e29433b6339b2676bd9ce81748e8e60f1326ca585e",
+    "visual-review/2ca441626b798408/feet-040.png": "c791bdb5bf4bc390bfb307369cf387bebcc605d5d8f77b38d541ef9a2ffb38fb",
+    "visual-review/2ca441626b798408/feet-041.png": "4af37705ac9cd0bbd944ce1ff0040fca46957a1906dd08bd5517ff6e8fa8909a",
+    "visual-review/2ca441626b798408/feet-042.png": "ee696bfc078ed7b73e36fc73ce54be8305d6d43961069504500474a9f5c9bc8b",
+    "visual-review/2ca441626b798408/feet-043.png": "ac4a2e7bf04c26739943606da04c5b55851fe987d8b8f280969ed10572ce4395",
+    "visual-review/2ca441626b798408/feet-044.png": "4593b1da6e4a34c54b2206a3e747097c8c9b3e7b64c63f6e9df0666d20254b92",
+    "visual-review/2ca441626b798408/feet-045.png": "f503f7e59c542758d8d0ea3814427a7ba3b408ba8f2c13ef7aae39cd76dc7e1a",
+    "visual-review/2ca441626b798408/feet-046.png": "93c4e98b7686ac56d9d19fc18349869c863bf36375dd5681432de22d414ac587",
+    "visual-review/2ca441626b798408/frame-000-0.800.png": "843a8b5c6378b3a8455c5ff7eaecad2026747b18e7280e2ca5db783d54155be2",
+    "visual-review/2ca441626b798408/frame-001-1.000.png": "b60e22ce9235593b3236a8b96e034fcb184f2e4a32faffd65a957bdf1cbe7927",
+    "visual-review/2ca441626b798408/frame-002-2.400.png": "7474ab99046ceafe795bb333bf7ba98d024ca18751d7ab3655af2fa0ae983f0f",
+    "visual-review/2ca441626b798408/frame-003-3.000.png": "fdb09202c27021c89c183297cd92018a4723749088fe7c803a3c79b6b35dc954",
+    "visual-review/2ca441626b798408/frame-004-4.000.png": "eef77858a41aa5536e869719070ff066a7b0dcea8c8387095e614a6e8a108c40",
+    "visual-review/2ca441626b798408/frame-005-4.233.png": "ca81ef32130cf72ea14a1bc304ab64ae46fd0dde5906be069fc6c471ceb13848",
+    "visual-review/2ca441626b798408/frame-006-4.367.png": "f666a22cfa123158a421a872e903479bb54c23c129b52c9cc9f3b7d96e5fcac2",
+    "visual-review/2ca441626b798408/frame-007-4.500.png": "65e9cc87153ba8f11438768116ef0ae514274469208a791c7cea2c52d1f9cda7",
+    "visual-review/2ca441626b798408/frame-008-5.000.png": "7012c2a200f247626abfe186c21518737ddbb13766096540c2218d2e7d32ad21",
+    "visual-review/2ca441626b798408/frame-009-6.067.png": "1aaa29f8e753e8353f90aac8490ab101bc5ae40de309ba8d30575728704aa9fb",
+    "visual-review/2ca441626b798408/frame-010-7.000.png": "b89c773dafe437d9cd57f013d2224e62cbca7de1f845feed62000bad76a92820",
+    "visual-review/2ca441626b798408/frame-011-7.600.png": "94a85be286c7d6cae2eb192bbf865b64b3cf48e1b087ba40b05cb043d2819ab9",
+    "visual-review/2ca441626b798408/frame-012-7.833.png": "24a54b14006aacc21563d5fb5adedfe101c42dc9fa6df545165f05c54d3b821b",
+    "visual-review/2ca441626b798408/frame-013-7.967.png": "54b5c135adbf737ab5ee6af8f3169eb33d888b2fffe393830b8498ea41f45366",
+    "visual-review/2ca441626b798408/frame-014-8.100.png": "e37cad415c219031b30b99002902c005995cae2b88935f84c14e94522088dcda",
+    "visual-review/2ca441626b798408/frame-015-9.000.png": "27fc24b071cbfd75fcbf0cc301356ba4a7ea2e5c80655572d9589d079efcba34",
+    "visual-review/2ca441626b798408/frame-016-9.833.png": "12eb4cfdea800973349d34b314181b897536e6eb877f454295b21f22419b0659",
+    "visual-review/2ca441626b798408/frame-017-11.000.png": "4211eec8889446a506748975089e1f5d11356a0aa1a26818796b8ba06ab7dc66",
+    "visual-review/2ca441626b798408/frame-018-11.533.png": "3ed88d79d697a039dcba3ebea76fe72c0d5a8277017c292f9315fea734075dcf",
+    "visual-review/2ca441626b798408/frame-019-11.767.png": "fc2a7077af3d49b459ea258a78e233ea1292bf5fc418017ba40766ee94f97afb",
+    "visual-review/2ca441626b798408/frame-020-11.867.png": "9f1d10947d56b4091512ab796e9e132708fde3d70c32db4271567fbfc9e3cba3",
+    "visual-review/2ca441626b798408/frame-021-11.900.png": "4a1722e5c9ad0ba4c012713fdef21adf62715a539586e94389a8fff0152bd5cb",
+    "visual-review/2ca441626b798408/frame-022-12.033.png": "3c21bb4e70631fe7bd22ec023b8a15dd324e622f1d5cb92885e964929d6cebd1",
+    "visual-review/2ca441626b798408/frame-023-12.167.png": "114708d852e80b7ec59df870245897625cd2722384924d10eb6b421c5de9d1be",
+    "visual-review/2ca441626b798408/frame-024-12.300.png": "c817ae34cc7db5515689c72f86f54c44a88831a1f68d48c6848a9832a04c8107",
+    "visual-review/2ca441626b798408/frame-025-12.467.png": "969cf7086f2eb8d3c6e11ae3d0e7c2c9c5fe3a3c646bf02edf07cbd4441f9d32",
+    "visual-review/2ca441626b798408/frame-026-13.000.png": "05cfa79cdaba57967218b8d61b0630316cc7c89deed5258f99debb8f76edd4eb",
+    "visual-review/2ca441626b798408/frame-027-13.133.png": "b69b9558d91171e5848ccd53e64d998ecfdf0f99838ac51725e104429b071b41",
+    "visual-review/2ca441626b798408/frame-028-13.233.png": "738d9a29af6da9732263c464b4b3b93c5b0cc05c82852fb7ca91491c419924d6",
+    "visual-review/2ca441626b798408/frame-029-13.400.png": "2f32dc08688b554aa2abd14a723fc7f5899a36bf78dcdc866ba290d36f2a041b",
+    "visual-review/2ca441626b798408/frame-030-14.433.png": "4ea42725c8193d988f1363d22c1dbf0cf6b40cc4ff6994c981094bd2a5770a53",
+    "visual-review/2ca441626b798408/frame-031-15.000.png": "51cb9809f45e646f4673df6b14a8a42d12a71a1f960ca93d77d064558f617fcb",
+    "visual-review/2ca441626b798408/frame-032-15.133.png": "b2b894bf7b3bbdd9e1d5ce60c9c899c50cae5b0ad5af9150dfb93e533b55b524",
+    "visual-review/2ca441626b798408/frame-033-15.233.png": "4cb97ccc5c870a5e66ec87c959b51b090a16bac08f4ee42064d620a82750b055",
+    "visual-review/2ca441626b798408/frame-034-15.400.png": "365b9f98816b98377497724b8ab6f91267d06e02ffbe07855417ad62c0849a30",
+    "visual-review/2ca441626b798408/frame-035-16.267.png": "d8dd590485206f92c314210a6b76d62d814589017ede590b0f5ae18f9b1510ba",
+    "visual-review/2ca441626b798408/frame-036-16.367.png": "6a164616ff97913b9d355eae159f101cb4911a496d38639f97c26989c49c3d17",
+    "visual-review/2ca441626b798408/frame-037-16.567.png": "572416378258b3256c76b8c72ed73c1355c8324c01e0ee88497fb3c4e7719aa9",
+    "visual-review/2ca441626b798408/frame-038-16.800.png": "2e616e4b6c1e8ac4e0dcd07d28e183e51eadab28b922a72de7547d5c970f1af2",
+    "visual-review/2ca441626b798408/frame-039-17.000.png": "6debf2a7b9ce32d4082e284ebe50cc2120fcf15552eb3c1eabe0a379904b9647",
+    "visual-review/2ca441626b798408/frame-040-17.133.png": "049b4a54d40067b0f404408f25fcd2a8f65ea19c5aea7886cd4ccaecaf87fb67",
+    "visual-review/2ca441626b798408/frame-041-17.300.png": "9b8d9b6eb2c79d19bb9f8cf83da1d583576437879623c57577831bab276c2680",
+    "visual-review/2ca441626b798408/frame-042-19.000.png": "a79cbf740a59b2e3ca7dd9e06cc22958b2be7d9c5805bf82b1d03451836f0231",
+    "visual-review/2ca441626b798408/frame-043-20.033.png": "913da3642c5cf281c2f2ed451c6d3318c0ff8936b129e3da6adfefaeaefc6be4",
+    "visual-review/2ca441626b798408/frame-044-21.000.png": "25c9dc75dfdd7bbf614208c6c8af03b88c96dbf7219422c904239660a1ff3d71",
+    "visual-review/2ca441626b798408/frame-045-22.767.png": "a032399695023ed960d864020ca2785b1b01c0afc7cb77791639cd7fbbb95ea6",
+    "visual-review/2ca441626b798408/frame-046-22.967.png": "132365c1bf634f889cc303e97ff20e2826a9d8c64b78ac9a6e27d4854d70acdb",
+    "visual-review/2ca441626b798408/overview-01.jpg": "754e354ad3de9e7f006e7f4abe3a389f69209b002cf3380d5bdeac462eeb918f",
+    "visual-review/2ca441626b798408/overview-02.jpg": "4a7b94e609d7b2dc6c8aa0c865c09230f052cae7c6638e2c569dbc378e64bbcd",
+    "visual-review/2ca441626b798408/lip-burst-01.png": "294391859af3f5db2fcfce1376d6826c4ec4efab8824384a813c78d6c455f910",
+    "visual-review/2ca441626b798408/lip-burst-02.png": "294391859af3f5db2fcfce1376d6826c4ec4efab8824384a813c78d6c455f910",
+    "visual-review/2ca441626b798408/lip-burst-03.png": "11ff60b2fa5d91191b15aa9fe5c6f5ede59569928f951e94b893357ccdef20ab",
+    "visual-review/2ca441626b798408/lip-burst-04.png": "70c96e7762ca9048b2bb8b35f89a8681a31c060c0550a0409bb9eb83c0ee2d9f",
+    "visual-review/2ca441626b798408/lip-burst-05.png": "55aa45ad7220a0e0af2badb97adb9a56067ce9ac68c19e9cdff9d8fae1aa1411",
+    "visual-review/2ca441626b798408/lip-burst-06.png": "1d0e3f350316994aced87ed897bc3efd3316af7af2d5a737cd0d592fdf1bce6e",
+    "visual-review/2ca441626b798408/lip-burst-07.png": "a71794b28040b85d6f2dec2615c7327fa7a78f0e08b9b05e74d2bbe882a17af3",
+    "visual-review/2ca441626b798408/eyes-and-mouth-sequence.jpg": "e58f57185b716bcfad94c5b3a99f83f03da6c6ca2491433025430ca68a3ad8fb",
+    "visual-review/2ca441626b798408/lamp-boundary.png": "4831b9e63e272de04eef042fe65660bf3840d5e79f46214cdf226a0cab2e4a35",
+    "mouth-position-review/encoded-mouths.png": "e14a6511498901f3e2a9d4a94a86834912eeb35a8262418103b9925877054903",
+    "mouth-position-review/source-mouth-centers.png": "d89a33d42272a29012fccfa68cd98a331b8a839a22a933d23d7a2a5e292c18c1"
+  },
+  "inspectedEvidence": [
+    "visual-review/2ca441626b798408/overview-01.jpg",
+    "visual-review/2ca441626b798408/overview-02.jpg",
+    "visual-review/2ca441626b798408/feet-01.jpg",
+    "visual-review/2ca441626b798408/feet-02.jpg",
+    "visual-review/2ca441626b798408/feet-03.jpg",
+    "visual-review/2ca441626b798408/feet-04.jpg",
+    "visual-review/2ca441626b798408/eyes-and-mouth-sequence.jpg",
+    "mouth-position-review/encoded-mouths.png",
+    "mouth-position-review/source-mouth-centers.png"
+  ],
+  "checks": [
+    {
+      "name": "接地・床",
+      "status": "合格",
+      "evidence": [
+        "visual-review/2ca441626b798408/feet-01.jpg",
+        "visual-review/2ca441626b798408/feet-02.jpg"
+      ],
+      "notes": "冒頭の家具下部・床板・机脚の拡大で以前の矩形切断や脚の突出がない。後半の足はバストアップの画角外。"
+    },
+    {
+      "name": "遮蔽・前後関係",
+      "status": "合格",
+      "evidence": [
+        "visual-review/2ca441626b798408/overview-01.jpg",
+        "visual-review/2ca441626b798408/overview-02.jpg",
+        "visual-review/2ca441626b798408/feet-01.jpg"
+      ],
+      "notes": "机とペン立て、ライトが人物より前に見える状態を維持し、全体一覧と足元拡大でマスクの再発は見られない。"
+    },
+    {
+      "name": "身体・姿勢",
+      "status": "合格",
+      "evidence": [
+        "mouth-position-review/encoded-mouths.png",
+        "mouth-position-review/source-mouth-centers.png",
+        "visual-review/2ca441626b798408/overview-01.jpg",
+        "visual-review/2ca441626b798408/overview-02.jpg"
+      ],
+      "notes": "3可視ポーズの閉じ口と開口を実動画から拡大比較。耳元へ手を添える姿勢で口が右上へ飛ぶずれを解消。元画像の閉じ口の輪郭中心と開口中心を合わせた基準図・回帰検査も一致。"
+    },
+    {
+      "name": "時間・カメラ",
+      "status": "合格",
+      "evidence": [
+        "visual-review/2ca441626b798408/eyes-and-mouth-sequence.jpg",
+        "visual-review/2ca441626b798408/overview-01.jpg",
+        "visual-review/2ca441626b798408/overview-02.jpg"
+      ],
+      "notes": "口元の7連続フレームを確認し、開き具合が変わっても口の中心と目元・ハイライトが不自然に動かないことを確認。姿勢切替の二重像も確認範囲ではない。"
+    },
+    {
+      "name": "作画・光",
+      "status": "合格",
+      "evidence": [
+        "mouth-position-review/encoded-mouths.png",
+        "mouth-position-review/source-mouth-centers.png",
+        "visual-review/2ca441626b798408/eyes-and-mouth-sequence.jpg"
+      ],
+      "notes": "実MP4の口元拡大で、v4の階段状の輪郭に比べて曲線の縁が滑らかになった。局所の高解像度描画による改善で、目や顔全体をぼかしたものではない。"
+    },
+    {
+      "name": "指摘・画面",
+      "status": "合格",
+      "evidence": [
+        "mouth-position-review/encoded-mouths.png",
+        "mouth-position-review/source-mouth-centers.png",
+        "visual-review/2ca441626b798408/overview-01.jpg",
+        "visual-review/2ca441626b798408/overview-02.jpg",
+        "visual-review/2ca441626b798408/eyes-and-mouth-sequence.jpg"
+      ],
+      "notes": "口のガビつきと各姿勢の位置ずれを再確認。閉口と開口を対にして比較し、元の口を中心に配置されている。字幕・上半身画角・以前の音素同期と読みを維持。"
+    }
+  ],
+  "findings": [],
+  "resolvedFindings": [
+    {
+      "id": "V003",
+      "issue": "口輪郭の階段状の荒れ",
+      "resolution": "8倍描画とアンチエイリアス。実動画の口元拡大で確認。"
+    },
+    {
+      "id": "V004",
+      "issue": "hairTuckの元の口と開口の中心が異なる",
+      "resolution": "姿勢別の元の閉じ口の輪郭矩形中心へ配置。実出力の閉口・開口比較と原画基準図・回帰検査で確認。"
+    }
+  ]
+}
