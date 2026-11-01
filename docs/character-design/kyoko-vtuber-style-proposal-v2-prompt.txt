@@ -1,0 +1,4 @@
+制作方法: 組み込みimagegen
+編集元: kyoko-vtuber-style-proposal-v1.png
+
+Edit the supplied illustration ONLY to reduce cheek blush in BOTH the small full-body face and large bust portrait. Remove the pink diagonal cheek hatching and reduce broad pink cheek coloration by about 85%, leaving mostly pale natural skin and at most an extremely faint tint. Preserve original facial shading and tiny sweat drops. Keep EVERYTHING else unchanged: same character identity, gray half-lidded eyes, worried eyebrows, wavy nervous mouth, exact facial proportions and expression, hair silhouette and strand detailing, black long wavy hair, navy business suit, ribbon, body, hands, pose, shoes, composition, framing, white background, rendering quality. No redesign or new elements. Only localized cheek blush correction.
